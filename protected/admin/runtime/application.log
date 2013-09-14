@@ -1,0 +1,1831 @@
+2013/04/22 17:49:07 [error] [php] PDOStatement::execute() expects parameter 1 to be array, boolean given (E:\host\vhosts\movie\framework\db\CDbCommand.php:336)
+Stack trace:
+#0 E:\host\vhosts\movie\protected\admin\controllers\MovieController.php(86): MovieController->checkAddDelPeople()
+#1 E:\host\vhosts\movie\framework\web\actions\CInlineAction.php(49): MovieController->actionCheckUpdate()
+#2 E:\host\vhosts\movie\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 E:\host\vhosts\movie\framework\web\CController.php(286): MovieController->runAction()
+#4 E:\host\vhosts\movie\framework\web\CController.php(265): MovieController->runActionWithFilters()
+#5 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): MovieController->run()
+#6 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 E:\host\vhosts\movie\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=movie/checkupdate
+in E:\host\vhosts\movie\protected\admin\controllers\MovieController.php (154)
+in E:\host\vhosts\movie\protected\admin\controllers\MovieController.php (86)
+in E:\host\vhosts\movie\backend.php (13)
+2013/04/22 17:50:07 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: select `people_id` from movie_movie_people where `movie_id`=:movie_id and `role`=:role.
+in E:\host\vhosts\movie\protected\admin\controllers\MovieController.php (154)
+in E:\host\vhosts\movie\protected\admin\controllers\MovieController.php (86)
+in E:\host\vhosts\movie\backend.php (13)
+2013/04/22 17:50:33 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: select `people_id` from movie_movie_people where `movie_id`=:movie_id and `role`=:role.
+in E:\host\vhosts\movie\protected\admin\controllers\MovieController.php (154)
+in E:\host\vhosts\movie\protected\admin\controllers\MovieController.php (86)
+in E:\host\vhosts\movie\backend.php (13)
+2013/04/22 17:51:06 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: select `people_id` from movie_movie_people where `movie_id`=:movie_id and `role`=:role.
+in E:\host\vhosts\movie\protected\admin\controllers\MovieController.php (154)
+in E:\host\vhosts\movie\protected\admin\controllers\MovieController.php (86)
+in E:\host\vhosts\movie\backend.php (13)
+2013/04/22 17:57:41 [error] [php] Undefined variable: add_peoples (E:\host\vhosts\movie\protected\admin\controllers\MovieController.php:138)
+Stack trace:
+#0 E:\host\vhosts\movie\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 E:\host\vhosts\movie\framework\web\CController.php(286): MovieController->runAction()
+#2 E:\host\vhosts\movie\framework\web\CController.php(265): MovieController->runActionWithFilters()
+#3 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): MovieController->run()
+#4 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 E:\host\vhosts\movie\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=movie/checkupdate
+in E:\host\vhosts\movie\protected\admin\controllers\MovieController.php (138)
+in E:\host\vhosts\movie\protected\admin\controllers\MovieController.php (86)
+in E:\host\vhosts\movie\backend.php (13)
+2013/04/22 18:40:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '此电影不存在' in E:\host\vhosts\movie\protected\admin\controllers\MovieController.php:48
+Stack trace:
+#0 [internal function]: MovieController->actionUpdate('71343')
+#1 E:\host\vhosts\movie\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(MovieController), Array)
+#2 E:\host\vhosts\movie\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(MovieController), Object(ReflectionMethod), Array)
+#3 E:\host\vhosts\movie\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 E:\host\vhosts\movie\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 E:\host\vhosts\movie\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): CController->run('update')
+#7 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController('movie/update')
+#8 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 E:\host\vhosts\movie\backend.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/backend.php?r=movie/update&id=71343
+---
+2013/04/22 18:40:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '此电影不存在' in E:\host\vhosts\movie\protected\admin\controllers\MovieController.php:48
+Stack trace:
+#0 [internal function]: MovieController->actionUpdate('7200')
+#1 E:\host\vhosts\movie\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(MovieController), Array)
+#2 E:\host\vhosts\movie\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(MovieController), Object(ReflectionMethod), Array)
+#3 E:\host\vhosts\movie\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 E:\host\vhosts\movie\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 E:\host\vhosts\movie\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): CController->run('update')
+#7 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController('movie/update')
+#8 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 E:\host\vhosts\movie\backend.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/backend.php?r=movie/update&id=7200
+---
+2013/04/22 18:49:40 [error] [php] Undefined index: movie_id_tag (E:\host\vhosts\movie\protected\admin\controllers\MovieController.php:183)
+Stack trace:
+#0 E:\host\vhosts\movie\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 E:\host\vhosts\movie\framework\web\CController.php(286): MovieController->runAction()
+#2 E:\host\vhosts\movie\framework\web\CController.php(265): MovieController->runActionWithFilters()
+#3 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): MovieController->run()
+#4 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 E:\host\vhosts\movie\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=movie/checkupdate
+in E:\host\vhosts\movie\protected\admin\controllers\MovieController.php (183)
+in E:\host\vhosts\movie\protected\admin\controllers\MovieController.php (93)
+in E:\host\vhosts\movie\backend.php (13)
+2013/04/22 18:50:01 [error] [php] Trying to get property of non-object (E:\host\vhosts\movie\protected\admin\controllers\MovieController.php:183)
+Stack trace:
+#0 E:\host\vhosts\movie\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 E:\host\vhosts\movie\framework\web\CController.php(286): MovieController->runAction()
+#2 E:\host\vhosts\movie\framework\web\CController.php(265): MovieController->runActionWithFilters()
+#3 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): MovieController->run()
+#4 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 E:\host\vhosts\movie\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=movie/checkupdate
+in E:\host\vhosts\movie\protected\admin\controllers\MovieController.php (183)
+in E:\host\vhosts\movie\protected\admin\controllers\MovieController.php (93)
+in E:\host\vhosts\movie\backend.php (13)
+2013/04/22 19:25:57 [error] [php] Undefined index: director (E:\host\vhosts\movie\protected\admin\controllers\MovieController.php:86)
+Stack trace:
+#0 E:\host\vhosts\movie\framework\web\CController.php(286): MovieController->runAction()
+#1 E:\host\vhosts\movie\framework\web\CController.php(265): MovieController->runActionWithFilters()
+#2 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): MovieController->run()
+#3 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 E:\host\vhosts\movie\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=movie/checkupdate
+in E:\host\vhosts\movie\protected\admin\controllers\MovieController.php (86)
+in E:\host\vhosts\movie\backend.php (13)
+2013/04/22 19:27:59 [error] [php] Undefined index: director (E:\host\vhosts\movie\protected\admin\controllers\MovieController.php:87)
+Stack trace:
+#0 E:\host\vhosts\movie\framework\web\CController.php(286): MovieController->runAction()
+#1 E:\host\vhosts\movie\framework\web\CController.php(265): MovieController->runActionWithFilters()
+#2 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): MovieController->run()
+#3 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 E:\host\vhosts\movie\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=movie/checkupdate
+in E:\host\vhosts\movie\protected\admin\controllers\MovieController.php (87)
+in E:\host\vhosts\movie\backend.php (13)
+2013/04/22 19:33:24 [error] [php] trim() expects parameter 1 to be string, array given (E:\host\vhosts\movie\protected\admin\controllers\MovieController.php:189)
+Stack trace:
+#0 E:\host\vhosts\movie\framework\web\actions\CInlineAction.php(49): MovieController->actionCheckUpdate()
+#1 E:\host\vhosts\movie\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 E:\host\vhosts\movie\framework\web\CController.php(286): MovieController->runAction()
+#3 E:\host\vhosts\movie\framework\web\CController.php(265): MovieController->runActionWithFilters()
+#4 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): MovieController->run()
+#5 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#7 E:\host\vhosts\movie\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=movie/checkupdate
+in E:\host\vhosts\movie\protected\admin\controllers\MovieController.php (189)
+in E:\host\vhosts\movie\protected\admin\controllers\MovieController.php (95)
+in E:\host\vhosts\movie\backend.php (13)
+2013/04/22 19:41:31 [error] [php] in_array() expects parameter 2 to be array, string given (E:\host\vhosts\movie\protected\admin\controllers\MovieController.php:202)
+Stack trace:
+#0 E:\host\vhosts\movie\framework\web\actions\CInlineAction.php(49): MovieController->actionCheckUpdate()
+#1 E:\host\vhosts\movie\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 E:\host\vhosts\movie\framework\web\CController.php(286): MovieController->runAction()
+#3 E:\host\vhosts\movie\framework\web\CController.php(265): MovieController->runActionWithFilters()
+#4 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): MovieController->run()
+#5 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#7 E:\host\vhosts\movie\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=movie/checkupdate
+in E:\host\vhosts\movie\protected\admin\controllers\MovieController.php (202)
+in E:\host\vhosts\movie\protected\admin\controllers\MovieController.php (95)
+in E:\host\vhosts\movie\backend.php (13)
+2013/04/22 19:50:11 [error] [php] include(TagController.php): failed to open stream: No such file or directory (E:\host\vhosts\movie\framework\YiiBase.php:421)
+Stack trace:
+#0 E:\host\vhosts\movie\protected\admin\controllers\MovieController.php(204): spl_autoload_call()
+#1 E:\host\vhosts\movie\protected\admin\controllers\MovieController.php(95): MovieController->checkAddDelTag()
+#2 E:\host\vhosts\movie\framework\web\actions\CInlineAction.php(49): MovieController->actionCheckUpdate()
+#3 E:\host\vhosts\movie\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 E:\host\vhosts\movie\framework\web\CController.php(286): MovieController->runAction()
+#5 E:\host\vhosts\movie\framework\web\CController.php(265): MovieController->runActionWithFilters()
+#6 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): MovieController->run()
+#7 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 E:\host\vhosts\movie\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=movie/checkupdate
+in E:\host\vhosts\movie\protected\admin\controllers\MovieController.php (204)
+in E:\host\vhosts\movie\protected\admin\controllers\MovieController.php (95)
+in E:\host\vhosts\movie\backend.php (13)
+2013/04/22 20:17:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "add" 动作.' in E:\host\vhosts\movie\framework\web\CController.php:483
+Stack trace:
+#0 E:\host\vhosts\movie\framework\web\CController.php(270): CController->missingAction('add')
+#1 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): CController->run('add')
+#2 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController('movie/add')
+#3 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 E:\host\vhosts\movie\backend.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/backend.php?r=movie/add
+HTTP_REFERER=http://movie/backend.php?r=
+---
+2013/04/22 21:00:20 [error] [php] date() expects at least 1 parameter, 0 given (E:\host\vhosts\movie\protected\admin\controllers\MovieController.php:297)
+Stack trace:
+#0 E:\host\vhosts\movie\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 E:\host\vhosts\movie\framework\web\CController.php(286): MovieController->runAction()
+#2 E:\host\vhosts\movie\framework\web\CController.php(265): MovieController->runActionWithFilters()
+#3 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): MovieController->run()
+#4 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 E:\host\vhosts\movie\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=movie/checkadd
+in E:\host\vhosts\movie\protected\admin\controllers\MovieController.php (297)
+in E:\host\vhosts\movie\backend.php (13)
+2013/04/22 21:50:10 [error] [php] Undefined variable: model_o_tags (E:\host\vhosts\movie\protected\admin\controllers\MovieController.php:202)
+Stack trace:
+#0 E:\host\vhosts\movie\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 E:\host\vhosts\movie\framework\web\CController.php(286): MovieController->runAction()
+#2 E:\host\vhosts\movie\framework\web\CController.php(265): MovieController->runActionWithFilters()
+#3 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): MovieController->run()
+#4 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 E:\host\vhosts\movie\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=movie/checkupdate
+in E:\host\vhosts\movie\protected\admin\controllers\MovieController.php (202)
+in E:\host\vhosts\movie\protected\admin\controllers\MovieController.php (95)
+in E:\host\vhosts\movie\backend.php (13)
+2013/04/23 12:54:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "people/getname"。' in E:\host\vhosts\movie\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController('people/getname')
+#1 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\host\vhosts\movie\backend.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/backend.php?r=people/getname
+HTTP_REFERER=http://movie/backend.php?r=movie/add
+---
+2013/04/23 12:54:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "people/getname"。' in E:\host\vhosts\movie\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController('people/getname')
+#1 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\host\vhosts\movie\backend.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/backend.php?r=people/getname
+HTTP_REFERER=http://movie/backend.php?r=movie/add
+---
+2013/04/23 12:55:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "people/getname"。' in E:\host\vhosts\movie\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController('people/getname')
+#1 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\host\vhosts\movie\backend.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/backend.php?r=people/getname
+HTTP_REFERER=http://movie/backend.php?r=movie/add
+---
+2013/04/23 12:55:51 [error] [exception.CException] exception 'CException' with message 'MovieController and its behaviors do not have a method or closure named "get_persion".' in E:\host\vhosts\movie\framework\base\CComponent.php:265
+Stack trace:
+#0 E:\host\vhosts\movie\protected\admin\views\movie\update.php(64): CComponent->__call('get_persion', Array)
+#1 E:\host\vhosts\movie\protected\admin\views\movie\update.php(64): MovieController->get_persion('10064', 2)
+#2 E:\host\vhosts\movie\framework\web\CBaseController.php(126): require('E:\host\vhosts\...')
+#3 E:\host\vhosts\movie\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\host\vhosts\...', Array, true)
+#4 E:\host\vhosts\movie\framework\web\CController.php(869): CBaseController->renderFile('E:\host\vhosts\...', Array, true)
+#5 E:\host\vhosts\movie\framework\web\CController.php(782): CController->renderPartial('update', Array, true)
+#6 E:\host\vhosts\movie\protected\admin\controllers\MovieController.php(53): CController->render('update', Array)
+#7 [internal function]: MovieController->actionUpdate('10064')
+#8 E:\host\vhosts\movie\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(MovieController), Array)
+#9 E:\host\vhosts\movie\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(MovieController), Object(ReflectionMethod), Array)
+#10 E:\host\vhosts\movie\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 E:\host\vhosts\movie\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 E:\host\vhosts\movie\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): CController->run('update')
+#14 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController('movie/update')
+#15 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 E:\host\vhosts\movie\backend.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/backend.php?r=movie/update&id=10064
+HTTP_REFERER=http://movie/backend.php?r=movie/index
+---
+2013/04/23 13:17:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "people/add"。' in E:\host\vhosts\movie\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController('people/add')
+#1 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\host\vhosts\movie\backend.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/backend.php?r=people/add
+HTTP_REFERER=http://movie/backend.php?r=site/index
+---
+2013/04/23 13:17:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "people/index"。' in E:\host\vhosts\movie\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController('people/index')
+#1 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\host\vhosts\movie\backend.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/backend.php?r=people/index
+HTTP_REFERER=http://movie/backend.php?r=site/index
+---
+2013/04/23 13:18:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "add" 动作.' in E:\host\vhosts\movie\framework\web\CController.php:483
+Stack trace:
+#0 E:\host\vhosts\movie\framework\web\CController.php(270): CController->missingAction('add')
+#1 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): CController->run('add')
+#2 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController('user/add')
+#3 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 E:\host\vhosts\movie\backend.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/backend.php?r=user/add
+HTTP_REFERER=http://movie/backend.php?r=site/index
+---
+2013/04/23 13:18:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in E:\host\vhosts\movie\framework\web\CController.php:483
+Stack trace:
+#0 E:\host\vhosts\movie\framework\web\CController.php(270): CController->missingAction('index')
+#1 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): CController->run('index')
+#2 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController('comment/index')
+#3 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 E:\host\vhosts\movie\backend.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/backend.php?r=comment/index
+HTTP_REFERER=http://movie/backend.php?r=site/index
+---
+2013/04/23 13:37:23 [error] [php] include(People.php): failed to open stream: No such file or directory (E:\host\vhosts\movie\framework\YiiBase.php:421)
+Stack trace:
+#0 E:\host\vhosts\movie\protected\admin\controllers\PersionController.php(31): spl_autoload_call()
+#1 E:\host\vhosts\movie\framework\web\actions\CInlineAction.php(49): PersionController->actionGetName()
+#2 E:\host\vhosts\movie\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 E:\host\vhosts\movie\framework\web\CController.php(286): PersionController->runAction()
+#4 E:\host\vhosts\movie\framework\web\CController.php(265): PersionController->runActionWithFilters()
+#5 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): PersionController->run()
+#6 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 E:\host\vhosts\movie\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=persion/getname
+in E:\host\vhosts\movie\protected\admin\controllers\PersionController.php (31)
+in E:\host\vhosts\movie\backend.php (13)
+2013/04/23 13:37:45 [error] [php] include(People.php): failed to open stream: No such file or directory (E:\host\vhosts\movie\framework\YiiBase.php:421)
+Stack trace:
+#0 E:\host\vhosts\movie\protected\admin\controllers\PersionController.php(31): spl_autoload_call()
+#1 E:\host\vhosts\movie\framework\web\actions\CInlineAction.php(49): PersionController->actionGetName()
+#2 E:\host\vhosts\movie\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 E:\host\vhosts\movie\framework\web\CController.php(286): PersionController->runAction()
+#4 E:\host\vhosts\movie\framework\web\CController.php(265): PersionController->runActionWithFilters()
+#5 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): PersionController->run()
+#6 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 E:\host\vhosts\movie\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=persion/getname
+in E:\host\vhosts\movie\protected\admin\controllers\PersionController.php (31)
+in E:\host\vhosts\movie\backend.php (13)
+2013/04/23 13:42:20 [error] [php] include(MoviePeople.php): failed to open stream: No such file or directory (E:\host\vhosts\movie\framework\YiiBase.php:421)
+Stack trace:
+#0 E:\host\vhosts\movie\protected\admin\controllers\MovieController.php(144): spl_autoload_call()
+#1 E:\host\vhosts\movie\protected\admin\controllers\MovieController.php(87): MovieController->checkAddDelPeople()
+#2 E:\host\vhosts\movie\framework\web\actions\CInlineAction.php(49): MovieController->actionCheckUpdate()
+#3 E:\host\vhosts\movie\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 E:\host\vhosts\movie\framework\web\CController.php(286): MovieController->runAction()
+#5 E:\host\vhosts\movie\framework\web\CController.php(265): MovieController->runActionWithFilters()
+#6 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): MovieController->run()
+#7 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 E:\host\vhosts\movie\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=movie/checkupdate
+in E:\host\vhosts\movie\protected\admin\controllers\MovieController.php (144)
+in E:\host\vhosts\movie\protected\admin\controllers\MovieController.php (87)
+in E:\host\vhosts\movie\backend.php (13)
+2013/04/23 13:43:12 [error] [php] Undefined variable: name失败 (E:\host\vhosts\movie\protected\admin\components\BaseController.php:77)
+Stack trace:
+#0 E:\host\vhosts\movie\framework\web\actions\CInlineAction.php(49): MovieController->actionCheckUpdate()
+#1 E:\host\vhosts\movie\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 E:\host\vhosts\movie\framework\web\CController.php(286): MovieController->runAction()
+#3 E:\host\vhosts\movie\framework\web\CController.php(265): MovieController->runActionWithFilters()
+#4 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): MovieController->run()
+#5 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#7 E:\host\vhosts\movie\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=movie/checkupdate
+in E:\host\vhosts\movie\protected\admin\components\BaseController.php (77)
+in E:\host\vhosts\movie\protected\admin\controllers\MovieController.php (205)
+in E:\host\vhosts\movie\protected\admin\controllers\MovieController.php (95)
+2013/04/23 13:44:08 [error] [php] Undefined variable: name失败 (E:\host\vhosts\movie\protected\admin\components\BaseController.php:77)
+Stack trace:
+#0 E:\host\vhosts\movie\framework\web\actions\CInlineAction.php(49): MovieController->actionCheckUpdate()
+#1 E:\host\vhosts\movie\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 E:\host\vhosts\movie\framework\web\CController.php(286): MovieController->runAction()
+#3 E:\host\vhosts\movie\framework\web\CController.php(265): MovieController->runActionWithFilters()
+#4 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): MovieController->run()
+#5 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#7 E:\host\vhosts\movie\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=movie/checkupdate
+in E:\host\vhosts\movie\protected\admin\components\BaseController.php (77)
+in E:\host\vhosts\movie\protected\admin\controllers\MovieController.php (205)
+in E:\host\vhosts\movie\protected\admin\controllers\MovieController.php (95)
+2013/04/23 13:47:49 [error] [php] Undefined variable: tags_arr (E:\host\vhosts\movie\protected\admin\controllers\MovieController.php:99)
+Stack trace:
+#0 E:\host\vhosts\movie\framework\web\CController.php(286): MovieController->runAction()
+#1 E:\host\vhosts\movie\framework\web\CController.php(265): MovieController->runActionWithFilters()
+#2 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): MovieController->run()
+#3 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 E:\host\vhosts\movie\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=movie/checkupdate
+in E:\host\vhosts\movie\protected\admin\controllers\MovieController.php (99)
+in E:\host\vhosts\movie\backend.php (13)
+2013/04/23 14:04:23 [error] [php] Undefined index: picture (E:\host\vhosts\movie\protected\admin\views\persion\index.php:40)
+Stack trace:
+#0 E:\host\vhosts\movie\framework\web\CController.php(869): PersionController->renderFile()
+#1 E:\host\vhosts\movie\framework\web\CController.php(782): PersionController->renderPartial()
+#2 E:\host\vhosts\movie\protected\admin\controllers\PersionController.php(37): PersionController->render()
+#3 E:\host\vhosts\movie\framework\web\actions\CInlineAction.php(49): PersionController->actionIndex()
+#4 E:\host\vhosts\movie\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\host\vhosts\movie\framework\web\CController.php(286): PersionController->runAction()
+#6 E:\host\vhosts\movie\framework\web\CController.php(265): PersionController->runActionWithFilters()
+#7 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): PersionController->run()
+#8 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 E:\host\vhosts\movie\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=persion/index
+in E:\host\vhosts\movie\protected\admin\views\persion\index.php (40)
+in E:\host\vhosts\movie\protected\admin\controllers\PersionController.php (37)
+in E:\host\vhosts\movie\backend.php (13)
+2013/04/23 14:07:19 [error] [php] Undefined index: picture (E:\host\vhosts\movie\protected\admin\views\persion\index.php:42)
+Stack trace:
+#0 E:\host\vhosts\movie\framework\web\CController.php(869): PersionController->renderFile()
+#1 E:\host\vhosts\movie\framework\web\CController.php(782): PersionController->renderPartial()
+#2 E:\host\vhosts\movie\protected\admin\controllers\PersionController.php(37): PersionController->render()
+#3 E:\host\vhosts\movie\framework\web\actions\CInlineAction.php(49): PersionController->actionIndex()
+#4 E:\host\vhosts\movie\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\host\vhosts\movie\framework\web\CController.php(286): PersionController->runAction()
+#6 E:\host\vhosts\movie\framework\web\CController.php(265): PersionController->runActionWithFilters()
+#7 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): PersionController->run()
+#8 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 E:\host\vhosts\movie\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=persion/index
+in E:\host\vhosts\movie\protected\admin\views\persion\index.php (42)
+in E:\host\vhosts\movie\protected\admin\controllers\PersionController.php (37)
+in E:\host\vhosts\movie\backend.php (13)
+2013/04/23 14:07:37 [error] [php] Undefined index: large_picture (E:\host\vhosts\movie\protected\admin\views\persion\index.php:42)
+Stack trace:
+#0 E:\host\vhosts\movie\framework\web\CController.php(869): PersionController->renderFile()
+#1 E:\host\vhosts\movie\framework\web\CController.php(782): PersionController->renderPartial()
+#2 E:\host\vhosts\movie\protected\admin\controllers\PersionController.php(37): PersionController->render()
+#3 E:\host\vhosts\movie\framework\web\actions\CInlineAction.php(49): PersionController->actionIndex()
+#4 E:\host\vhosts\movie\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\host\vhosts\movie\framework\web\CController.php(286): PersionController->runAction()
+#6 E:\host\vhosts\movie\framework\web\CController.php(265): PersionController->runActionWithFilters()
+#7 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): PersionController->run()
+#8 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 E:\host\vhosts\movie\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=persion/index
+in E:\host\vhosts\movie\protected\admin\views\persion\index.php (42)
+in E:\host\vhosts\movie\protected\admin\controllers\PersionController.php (37)
+in E:\host\vhosts\movie\backend.php (13)
+2013/04/23 14:07:45 [error] [php] Undefined index: average (E:\host\vhosts\movie\protected\admin\views\persion\index.php:52)
+Stack trace:
+#0 E:\host\vhosts\movie\framework\web\CController.php(869): PersionController->renderFile()
+#1 E:\host\vhosts\movie\framework\web\CController.php(782): PersionController->renderPartial()
+#2 E:\host\vhosts\movie\protected\admin\controllers\PersionController.php(37): PersionController->render()
+#3 E:\host\vhosts\movie\framework\web\actions\CInlineAction.php(49): PersionController->actionIndex()
+#4 E:\host\vhosts\movie\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\host\vhosts\movie\framework\web\CController.php(286): PersionController->runAction()
+#6 E:\host\vhosts\movie\framework\web\CController.php(265): PersionController->runActionWithFilters()
+#7 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): PersionController->run()
+#8 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 E:\host\vhosts\movie\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=persion/index
+in E:\host\vhosts\movie\protected\admin\views\persion\index.php (52)
+in E:\host\vhosts\movie\protected\admin\controllers\PersionController.php (37)
+in E:\host\vhosts\movie\backend.php (13)
+2013/04/23 14:14:50 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND `name`='邱志敏' order by `id` desc' at line 1. The SQL statement executed was: select `id`,`name`,`gender`,`name_en`,`aka`,`aka_en`,`birthday`,`description`,`works`,`avatar`,`douban_id` from movie_persion where AND `name`='邱志敏' order by `id` desc.
+in E:\host\vhosts\movie\protected\admin\controllers\PersionController.php (33)
+in E:\host\vhosts\movie\backend.php (13)
+2013/04/23 14:14:50 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND `name`='邱志敏' order by `id` desc' at line 1. The SQL statement executed was: select `id`,`name`,`gender`,`name_en`,`aka`,`aka_en`,`birthday`,`description`,`works`,`avatar`,`douban_id` from movie_persion where AND `name`='邱志敏' order by `id` desc' in E:\host\vhosts\movie\framework\db\CDbCommand.php:541
+Stack trace:
+#0 E:\host\vhosts\movie\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 E:\host\vhosts\movie\protected\admin\controllers\PersionController.php(33): CDbCommand->queryAll()
+#2 E:\host\vhosts\movie\framework\web\actions\CInlineAction.php(49): PersionController->actionIndex()
+#3 E:\host\vhosts\movie\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 E:\host\vhosts\movie\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 E:\host\vhosts\movie\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): CController->run('index')
+#7 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController('persion/index')
+#8 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 E:\host\vhosts\movie\backend.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/backend.php?r=persion%2Findex&id=&name=%E9%82%B1%E5%BF%97%E6%95%8F&search=%E6%90%9C%E7%B4%A2
+HTTP_REFERER=http://movie/backend.php?r=persion/index
+---
+2013/04/23 14:19:27 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% order by `id` desc' at line 1. The SQL statement executed was: select `id`,`name`,`gender`,`name_en`,`aka`,`aka_en`,`birthday`,`description`,`works`,`avatar`,`douban_id` from movie_persion where `name` like '%李'% order by `id` desc.
+in E:\host\vhosts\movie\protected\admin\controllers\PersionController.php (32)
+in E:\host\vhosts\movie\backend.php (13)
+2013/04/23 14:19:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% order by `id` desc' at line 1. The SQL statement executed was: select `id`,`name`,`gender`,`name_en`,`aka`,`aka_en`,`birthday`,`description`,`works`,`avatar`,`douban_id` from movie_persion where `name` like '%李'% order by `id` desc' in E:\host\vhosts\movie\framework\db\CDbCommand.php:541
+Stack trace:
+#0 E:\host\vhosts\movie\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 E:\host\vhosts\movie\protected\admin\controllers\PersionController.php(32): CDbCommand->queryAll()
+#2 E:\host\vhosts\movie\framework\web\actions\CInlineAction.php(49): PersionController->actionIndex()
+#3 E:\host\vhosts\movie\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 E:\host\vhosts\movie\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 E:\host\vhosts\movie\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): CController->run('index')
+#7 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController('persion/index')
+#8 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 E:\host\vhosts\movie\backend.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/backend.php?r=persion%2Findex&id=&name=%E6%9D%8E&search=%E6%90%9C%E7%B4%A2
+HTTP_REFERER=http://movie/backend.php?r=persion%2Findex&id=22145&name=&search=%E6%90%9C%E7%B4%A2
+---
+2013/04/23 15:55:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in E:\host\vhosts\movie\framework\web\CController.php:483
+Stack trace:
+#0 E:\host\vhosts\movie\framework\web\CController.php(270): CController->missingAction('index')
+#1 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): CController->run('index')
+#2 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController('comment/index')
+#3 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 E:\host\vhosts\movie\backend.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/backend.php?r=comment/index
+HTTP_REFERER=http://movie/backend.php?r=site/index
+---
+2013/04/23 16:11:52 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'on movie_movie on movie_movie.`id`=movie_comment.`movie_id`
+					order by movie' at line 3. The SQL statement executed was: select movie_comment.`id`,movie_comment.`user_id`,movie_comment.`movie_id`,movie_comment.`scores`,movie_comment.`content`,movie_comment.`date`,movie_user.`username`,movie_movie.`title` from movie_comment 
+					left join movie_user on movie_user.`id`=movie_comment.`user_id`
+					left join on movie_movie on movie_movie.`id`=movie_comment.`movie_id`
+					order by movie_comment.`date` desc.
+in E:\host\vhosts\movie\protected\admin\controllers\CommentController.php (38)
+in E:\host\vhosts\movie\backend.php (13)
+2013/04/23 16:11:52 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'on movie_movie on movie_movie.`id`=movie_comment.`movie_id`
+					order by movie' at line 3. The SQL statement executed was: select movie_comment.`id`,movie_comment.`user_id`,movie_comment.`movie_id`,movie_comment.`scores`,movie_comment.`content`,movie_comment.`date`,movie_user.`username`,movie_movie.`title` from movie_comment 
+					left join movie_user on movie_user.`id`=movie_comment.`user_id`
+					left join on movie_movie on movie_movie.`id`=movie_comment.`movie_id`
+					order by movie_comment.`date` desc' in E:\host\vhosts\movie\framework\db\CDbCommand.php:541
+Stack trace:
+#0 E:\host\vhosts\movie\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 E:\host\vhosts\movie\protected\admin\controllers\CommentController.php(38): CDbCommand->queryAll()
+#2 E:\host\vhosts\movie\framework\web\actions\CInlineAction.php(49): CommentController->actionIndex()
+#3 E:\host\vhosts\movie\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 E:\host\vhosts\movie\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 E:\host\vhosts\movie\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): CController->run('index')
+#7 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController('comment/index')
+#8 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 E:\host\vhosts\movie\backend.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/backend.php?r=comment/index
+HTTP_REFERER=http://movie/backend.php?r=site/index
+---
+2013/04/23 16:12:48 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'movie_comment.scores' in 'field list'. The SQL statement executed was: select movie_comment.`id`,movie_comment.`user_id`,movie_comment.`movie_id`,movie_comment.`scores`,movie_comment.`content`,movie_comment.`date`,movie_user.`username`,movie_movie.`title` from movie_comment 
+					left join movie_user on movie_user.`id`=movie_comment.`user_id`
+					left join movie_movie on movie_movie.`id`=movie_comment.`movie_id`
+					order by movie_comment.`date` desc.
+in E:\host\vhosts\movie\protected\admin\controllers\CommentController.php (38)
+in E:\host\vhosts\movie\backend.php (13)
+2013/04/23 16:12:48 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'movie_comment.scores' in 'field list'. The SQL statement executed was: select movie_comment.`id`,movie_comment.`user_id`,movie_comment.`movie_id`,movie_comment.`scores`,movie_comment.`content`,movie_comment.`date`,movie_user.`username`,movie_movie.`title` from movie_comment 
+					left join movie_user on movie_user.`id`=movie_comment.`user_id`
+					left join movie_movie on movie_movie.`id`=movie_comment.`movie_id`
+					order by movie_comment.`date` desc' in E:\host\vhosts\movie\framework\db\CDbCommand.php:541
+Stack trace:
+#0 E:\host\vhosts\movie\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 E:\host\vhosts\movie\protected\admin\controllers\CommentController.php(38): CDbCommand->queryAll()
+#2 E:\host\vhosts\movie\framework\web\actions\CInlineAction.php(49): CommentController->actionIndex()
+#3 E:\host\vhosts\movie\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 E:\host\vhosts\movie\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 E:\host\vhosts\movie\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): CController->run('index')
+#7 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController('comment/index')
+#8 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 E:\host\vhosts\movie\backend.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/backend.php?r=comment/index
+HTTP_REFERER=http://movie/backend.php?r=site/index
+---
+2013/04/23 16:14:00 [error] [php] Undefined index: country (E:\host\vhosts\movie\protected\admin\views\comment\index.php:37)
+Stack trace:
+#0 E:\host\vhosts\movie\framework\web\CController.php(869): CommentController->renderFile()
+#1 E:\host\vhosts\movie\framework\web\CController.php(782): CommentController->renderPartial()
+#2 E:\host\vhosts\movie\protected\admin\controllers\CommentController.php(57): CommentController->render()
+#3 E:\host\vhosts\movie\framework\web\actions\CInlineAction.php(49): CommentController->actionIndex()
+#4 E:\host\vhosts\movie\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\host\vhosts\movie\framework\web\CController.php(286): CommentController->runAction()
+#6 E:\host\vhosts\movie\framework\web\CController.php(265): CommentController->runActionWithFilters()
+#7 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): CommentController->run()
+#8 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 E:\host\vhosts\movie\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=comment/index
+in E:\host\vhosts\movie\protected\admin\views\comment\index.php (37)
+in E:\host\vhosts\movie\protected\admin\controllers\CommentController.php (57)
+in E:\host\vhosts\movie\backend.php (13)
+2013/04/23 16:14:46 [error] [php] Undefined index: douban_id (E:\host\vhosts\movie\protected\admin\views\comment\index.php:41)
+Stack trace:
+#0 E:\host\vhosts\movie\framework\web\CController.php(869): CommentController->renderFile()
+#1 E:\host\vhosts\movie\framework\web\CController.php(782): CommentController->renderPartial()
+#2 E:\host\vhosts\movie\protected\admin\controllers\CommentController.php(57): CommentController->render()
+#3 E:\host\vhosts\movie\framework\web\actions\CInlineAction.php(49): CommentController->actionIndex()
+#4 E:\host\vhosts\movie\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\host\vhosts\movie\framework\web\CController.php(286): CommentController->runAction()
+#6 E:\host\vhosts\movie\framework\web\CController.php(265): CommentController->runActionWithFilters()
+#7 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): CommentController->run()
+#8 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 E:\host\vhosts\movie\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=comment/index
+in E:\host\vhosts\movie\protected\admin\views\comment\index.php (41)
+in E:\host\vhosts\movie\protected\admin\controllers\CommentController.php (57)
+in E:\host\vhosts\movie\backend.php (13)
+2013/04/23 16:18:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "delete" 动作.' in E:\host\vhosts\movie\framework\web\CController.php:483
+Stack trace:
+#0 E:\host\vhosts\movie\framework\web\CController.php(270): CController->missingAction('delete')
+#1 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): CController->run('delete')
+#2 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController('comment/delete')
+#3 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 E:\host\vhosts\movie\backend.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/backend.php?r=comment/delete&id=2
+HTTP_REFERER=http://movie/backend.php?r=comment/index&page=3
+---
+2013/04/23 16:30:15 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '` like '%不%'
+					order by movie_comment.`date` desc' at line 3. The SQL statement executed was: select movie_comment.`id`,movie_comment.`user_id`,movie_comment.`movie_id`,movie_comment.`score`,movie_comment.`content`,movie_comment.`date`,movie_user.`username`,movie_movie.`title` from movie_comment 
+					left join movie_user on movie_user.`id`=movie_comment.`user_id`
+					left join movie_movie on movie_movie.`id`=movie_comment.`movie_id` where `movie_comment`.content` like '%不%'
+					order by movie_comment.`date` desc.
+in E:\host\vhosts\movie\protected\admin\controllers\CommentController.php (41)
+in E:\host\vhosts\movie\backend.php (13)
+2013/04/23 16:30:15 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '` like '%不%'
+					order by movie_comment.`date` desc' at line 3. The SQL statement executed was: select movie_comment.`id`,movie_comment.`user_id`,movie_comment.`movie_id`,movie_comment.`score`,movie_comment.`content`,movie_comment.`date`,movie_user.`username`,movie_movie.`title` from movie_comment 
+					left join movie_user on movie_user.`id`=movie_comment.`user_id`
+					left join movie_movie on movie_movie.`id`=movie_comment.`movie_id` where `movie_comment`.content` like '%不%'
+					order by movie_comment.`date` desc' in E:\host\vhosts\movie\framework\db\CDbCommand.php:541
+Stack trace:
+#0 E:\host\vhosts\movie\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 E:\host\vhosts\movie\protected\admin\controllers\CommentController.php(41): CDbCommand->queryAll()
+#2 E:\host\vhosts\movie\framework\web\actions\CInlineAction.php(49): CommentController->actionIndex()
+#3 E:\host\vhosts\movie\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 E:\host\vhosts\movie\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 E:\host\vhosts\movie\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): CController->run('index')
+#7 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController('comment/index')
+#8 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 E:\host\vhosts\movie\backend.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/backend.php?r=comment%2Findex&movie_id=&words=%E4%B8%8D&search=%E6%90%9C%E7%B4%A2
+HTTP_REFERER=http://movie/backend.php?r=comment/index
+---
+2013/04/23 16:31:18 [error] [php] Undefined variable: condition (E:\host\vhosts\movie\protected\admin\controllers\CommentController.php:34)
+Stack trace:
+#0 E:\host\vhosts\movie\framework\web\CController.php(286): CommentController->runAction()
+#1 E:\host\vhosts\movie\framework\web\CController.php(265): CommentController->runActionWithFilters()
+#2 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): CommentController->run()
+#3 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 E:\host\vhosts\movie\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=comment%2Findex&movie_id=&words=&search=%E6%90%9C%E7%B4%A2
+in E:\host\vhosts\movie\protected\admin\controllers\CommentController.php (34)
+in E:\host\vhosts\movie\backend.php (13)
+2013/04/23 16:33:10 [error] [php] Undefined variable: condition (E:\host\vhosts\movie\protected\admin\controllers\CommentController.php:34)
+Stack trace:
+#0 E:\host\vhosts\movie\framework\web\CController.php(286): CommentController->runAction()
+#1 E:\host\vhosts\movie\framework\web\CController.php(265): CommentController->runActionWithFilters()
+#2 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): CommentController->run()
+#3 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 E:\host\vhosts\movie\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=comment%2Findex&movie_id=&words=&search=%E6%90%9C%E7%B4%A2
+in E:\host\vhosts\movie\protected\admin\controllers\CommentController.php (34)
+in E:\host\vhosts\movie\backend.php (13)
+2013/04/23 16:41:24 [error] [php] Undefined index: id (E:\host\vhosts\movie\protected\admin\views\comment\update.php:22)
+Stack trace:
+#0 E:\host\vhosts\movie\framework\web\CController.php(869): CommentController->renderFile()
+#1 E:\host\vhosts\movie\framework\web\CController.php(782): CommentController->renderPartial()
+#2 E:\host\vhosts\movie\protected\admin\controllers\CommentController.php(80): CommentController->render()
+#3 unknown(0): CommentController->actionUpdate()
+#4 E:\host\vhosts\movie\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 E:\host\vhosts\movie\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 E:\host\vhosts\movie\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 E:\host\vhosts\movie\framework\web\CController.php(286): CommentController->runAction()
+#8 E:\host\vhosts\movie\framework\web\CController.php(265): CommentController->runActionWithFilters()
+#9 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): CommentController->run()
+#10 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 E:\host\vhosts\movie\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=comment/update&id=30
+in E:\host\vhosts\movie\protected\admin\views\comment\update.php (22)
+in E:\host\vhosts\movie\protected\admin\controllers\CommentController.php (80)
+in E:\host\vhosts\movie\backend.php (13)
+2013/04/23 16:41:45 [error] [php] Undefined index: id (E:\host\vhosts\movie\protected\admin\views\comment\update.php:22)
+Stack trace:
+#0 E:\host\vhosts\movie\framework\web\CController.php(869): CommentController->renderFile()
+#1 E:\host\vhosts\movie\framework\web\CController.php(782): CommentController->renderPartial()
+#2 E:\host\vhosts\movie\protected\admin\controllers\CommentController.php(80): CommentController->render()
+#3 unknown(0): CommentController->actionUpdate()
+#4 E:\host\vhosts\movie\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 E:\host\vhosts\movie\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 E:\host\vhosts\movie\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 E:\host\vhosts\movie\framework\web\CController.php(286): CommentController->runAction()
+#8 E:\host\vhosts\movie\framework\web\CController.php(265): CommentController->runActionWithFilters()
+#9 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): CommentController->run()
+#10 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 E:\host\vhosts\movie\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=comment/update&id=30
+in E:\host\vhosts\movie\protected\admin\views\comment\update.php (22)
+in E:\host\vhosts\movie\protected\admin\controllers\CommentController.php (80)
+in E:\host\vhosts\movie\backend.php (13)
+2013/04/23 16:41:46 [error] [php] Undefined index: id (E:\host\vhosts\movie\protected\admin\views\comment\update.php:22)
+Stack trace:
+#0 E:\host\vhosts\movie\framework\web\CController.php(869): CommentController->renderFile()
+#1 E:\host\vhosts\movie\framework\web\CController.php(782): CommentController->renderPartial()
+#2 E:\host\vhosts\movie\protected\admin\controllers\CommentController.php(80): CommentController->render()
+#3 unknown(0): CommentController->actionUpdate()
+#4 E:\host\vhosts\movie\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 E:\host\vhosts\movie\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 E:\host\vhosts\movie\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 E:\host\vhosts\movie\framework\web\CController.php(286): CommentController->runAction()
+#8 E:\host\vhosts\movie\framework\web\CController.php(265): CommentController->runActionWithFilters()
+#9 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): CommentController->run()
+#10 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 E:\host\vhosts\movie\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=comment/update&id=30
+in E:\host\vhosts\movie\protected\admin\views\comment\update.php (22)
+in E:\host\vhosts\movie\protected\admin\controllers\CommentController.php (80)
+in E:\host\vhosts\movie\backend.php (13)
+2013/04/23 16:41:49 [error] [php] Undefined index: id (E:\host\vhosts\movie\protected\admin\views\comment\update.php:22)
+Stack trace:
+#0 E:\host\vhosts\movie\framework\web\CController.php(869): CommentController->renderFile()
+#1 E:\host\vhosts\movie\framework\web\CController.php(782): CommentController->renderPartial()
+#2 E:\host\vhosts\movie\protected\admin\controllers\CommentController.php(80): CommentController->render()
+#3 unknown(0): CommentController->actionUpdate()
+#4 E:\host\vhosts\movie\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 E:\host\vhosts\movie\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 E:\host\vhosts\movie\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 E:\host\vhosts\movie\framework\web\CController.php(286): CommentController->runAction()
+#8 E:\host\vhosts\movie\framework\web\CController.php(265): CommentController->runActionWithFilters()
+#9 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): CommentController->run()
+#10 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 E:\host\vhosts\movie\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=comment/update&id=30
+in E:\host\vhosts\movie\protected\admin\views\comment\update.php (22)
+in E:\host\vhosts\movie\protected\admin\controllers\CommentController.php (80)
+in E:\host\vhosts\movie\backend.php (13)
+2013/04/23 16:45:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "checkupdate" 动作.' in E:\host\vhosts\movie\framework\web\CController.php:483
+Stack trace:
+#0 E:\host\vhosts\movie\framework\web\CController.php(270): CController->missingAction('checkupdate')
+#1 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): CController->run('checkupdate')
+#2 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController('comment/checkup...')
+#3 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 E:\host\vhosts\movie\backend.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/backend.php?r=comment/checkupdate
+HTTP_REFERER=http://movie/backend.php?r=comment/update&id=30
+---
+2013/04/23 17:02:49 [error] [php] Undefined index: usenrmae (E:\host\vhosts\movie\protected\admin\views\user\index.php:43)
+Stack trace:
+#0 E:\host\vhosts\movie\framework\web\CController.php(869): UserController->renderFile()
+#1 E:\host\vhosts\movie\framework\web\CController.php(782): UserController->renderPartial()
+#2 E:\host\vhosts\movie\protected\admin\controllers\UserController.php(55): UserController->render()
+#3 E:\host\vhosts\movie\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#4 E:\host\vhosts\movie\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\host\vhosts\movie\framework\web\CController.php(286): UserController->runAction()
+#6 E:\host\vhosts\movie\framework\web\CController.php(265): UserController->runActionWithFilters()
+#7 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): UserController->run()
+#8 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 E:\host\vhosts\movie\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=user/index
+in E:\host\vhosts\movie\protected\admin\views\user\index.php (43)
+in E:\host\vhosts\movie\protected\admin\controllers\UserController.php (55)
+in E:\host\vhosts\movie\backend.php (13)
+2013/05/04 22:22:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "people/getName"。' in E:\host\vhosts\movie\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController('people/getName')
+#1 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\host\vhosts\movie\backend.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=//backend.php?r=people/getName
+---
+2013/05/11 10:05:37 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'date` desc' at line 2. The SQL statement executed was: select `id`,`title`,`country`,`language`,`pubdate`,`year`,`picture`,`douban_id`,`average`,`large_picture`,`date` 
+					from movie_hot left join movie_movie on (movie_hot.`movie_id`= movie_movie.`id) order by `date` desc.
+in E:\host\vhosts\movie\protected\admin\controllers\HotController.php (45)
+in E:\host\vhosts\movie\backend.php (13)
+2013/05/11 10:05:37 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'date` desc' at line 2. The SQL statement executed was: select `id`,`title`,`country`,`language`,`pubdate`,`year`,`picture`,`douban_id`,`average`,`large_picture`,`date` 
+					from movie_hot left join movie_movie on (movie_hot.`movie_id`= movie_movie.`id) order by `date` desc' in E:\host\vhosts\movie\framework\db\CDbCommand.php:541
+Stack trace:
+#0 E:\host\vhosts\movie\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 E:\host\vhosts\movie\protected\admin\controllers\HotController.php(45): CDbCommand->queryAll()
+#2 E:\host\vhosts\movie\framework\web\actions\CInlineAction.php(49): HotController->actionIndex()
+#3 E:\host\vhosts\movie\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 E:\host\vhosts\movie\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 E:\host\vhosts\movie\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): CController->run('index')
+#7 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController('hot/index')
+#8 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 E:\host\vhosts\movie\backend.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/backend.php?r=hot/index
+HTTP_REFERER=http://movie/backend.php?r=site/index
+---
+2013/05/11 10:05:57 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'date` desc' at line 2. The SQL statement executed was: select `id`,`title`,`country`,`language`,`pubdate`,`year`,`picture`,`douban_id`,`average`,`large_picture`,`date` 
+					from movie_hot left join movie_movie on (movie_hot.`movie_id`= movie_movie.`id) order by movie_hot.`date` desc.
+in E:\host\vhosts\movie\protected\admin\controllers\HotController.php (45)
+in E:\host\vhosts\movie\backend.php (13)
+2013/05/11 10:05:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'date` desc' at line 2. The SQL statement executed was: select `id`,`title`,`country`,`language`,`pubdate`,`year`,`picture`,`douban_id`,`average`,`large_picture`,`date` 
+					from movie_hot left join movie_movie on (movie_hot.`movie_id`= movie_movie.`id) order by movie_hot.`date` desc' in E:\host\vhosts\movie\framework\db\CDbCommand.php:541
+Stack trace:
+#0 E:\host\vhosts\movie\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 E:\host\vhosts\movie\protected\admin\controllers\HotController.php(45): CDbCommand->queryAll()
+#2 E:\host\vhosts\movie\framework\web\actions\CInlineAction.php(49): HotController->actionIndex()
+#3 E:\host\vhosts\movie\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 E:\host\vhosts\movie\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 E:\host\vhosts\movie\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): CController->run('index')
+#7 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController('hot/index')
+#8 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 E:\host\vhosts\movie\backend.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/backend.php?r=hot/index
+HTTP_REFERER=http://movie/backend.php?r=site/index
+---
+2013/05/11 10:05:58 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'date` desc' at line 2. The SQL statement executed was: select `id`,`title`,`country`,`language`,`pubdate`,`year`,`picture`,`douban_id`,`average`,`large_picture`,`date` 
+					from movie_hot left join movie_movie on (movie_hot.`movie_id`= movie_movie.`id) order by movie_hot.`date` desc.
+in E:\host\vhosts\movie\protected\admin\controllers\HotController.php (45)
+in E:\host\vhosts\movie\backend.php (13)
+2013/05/11 10:05:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'date` desc' at line 2. The SQL statement executed was: select `id`,`title`,`country`,`language`,`pubdate`,`year`,`picture`,`douban_id`,`average`,`large_picture`,`date` 
+					from movie_hot left join movie_movie on (movie_hot.`movie_id`= movie_movie.`id) order by movie_hot.`date` desc' in E:\host\vhosts\movie\framework\db\CDbCommand.php:541
+Stack trace:
+#0 E:\host\vhosts\movie\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 E:\host\vhosts\movie\protected\admin\controllers\HotController.php(45): CDbCommand->queryAll()
+#2 E:\host\vhosts\movie\framework\web\actions\CInlineAction.php(49): HotController->actionIndex()
+#3 E:\host\vhosts\movie\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 E:\host\vhosts\movie\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 E:\host\vhosts\movie\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): CController->run('index')
+#7 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController('hot/index')
+#8 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 E:\host\vhosts\movie\backend.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/backend.php?r=hot/index
+HTTP_REFERER=http://movie/backend.php?r=site/index
+---
+2013/05/11 10:06:23 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'date` desc' at line 2. The SQL statement executed was: select `id`,`title`,`country`,`language`,`pubdate`,`year`,`picture`,`douban_id`,`average`,`large_picture`,`date` 
+					from movie_hot left join movie_movie on movie_hot.`movie_id`= movie_movie.`id order by movie_hot.`date` desc.
+in E:\host\vhosts\movie\protected\admin\controllers\HotController.php (45)
+in E:\host\vhosts\movie\backend.php (13)
+2013/05/11 10:06:23 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'date` desc' at line 2. The SQL statement executed was: select `id`,`title`,`country`,`language`,`pubdate`,`year`,`picture`,`douban_id`,`average`,`large_picture`,`date` 
+					from movie_hot left join movie_movie on movie_hot.`movie_id`= movie_movie.`id order by movie_hot.`date` desc' in E:\host\vhosts\movie\framework\db\CDbCommand.php:541
+Stack trace:
+#0 E:\host\vhosts\movie\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 E:\host\vhosts\movie\protected\admin\controllers\HotController.php(45): CDbCommand->queryAll()
+#2 E:\host\vhosts\movie\framework\web\actions\CInlineAction.php(49): HotController->actionIndex()
+#3 E:\host\vhosts\movie\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 E:\host\vhosts\movie\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 E:\host\vhosts\movie\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): CController->run('index')
+#7 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController('hot/index')
+#8 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 E:\host\vhosts\movie\backend.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/backend.php?r=hot/index
+HTTP_REFERER=http://movie/backend.php?r=site/index
+---
+2013/05/11 10:06:57 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in field list is ambiguous. The SQL statement executed was: select `id`,`title`,`country`,`language`,`pubdate`,`year`,`picture`,`douban_id`,`average`,`large_picture`,`date` as hot_date 
+					from movie_hot left join movie_movie on movie_hot.`movie_id`= movie_movie.`id order by hot_date desc.
+in E:\host\vhosts\movie\protected\admin\controllers\HotController.php (45)
+in E:\host\vhosts\movie\backend.php (13)
+2013/05/11 10:06:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in field list is ambiguous. The SQL statement executed was: select `id`,`title`,`country`,`language`,`pubdate`,`year`,`picture`,`douban_id`,`average`,`large_picture`,`date` as hot_date 
+					from movie_hot left join movie_movie on movie_hot.`movie_id`= movie_movie.`id order by hot_date desc' in E:\host\vhosts\movie\framework\db\CDbCommand.php:541
+Stack trace:
+#0 E:\host\vhosts\movie\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 E:\host\vhosts\movie\protected\admin\controllers\HotController.php(45): CDbCommand->queryAll()
+#2 E:\host\vhosts\movie\framework\web\actions\CInlineAction.php(49): HotController->actionIndex()
+#3 E:\host\vhosts\movie\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 E:\host\vhosts\movie\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 E:\host\vhosts\movie\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): CController->run('index')
+#7 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController('hot/index')
+#8 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 E:\host\vhosts\movie\backend.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/backend.php?r=hot/index
+HTTP_REFERER=http://movie/backend.php?r=site/index
+---
+2013/05/11 10:06:57 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in field list is ambiguous. The SQL statement executed was: select `id`,`title`,`country`,`language`,`pubdate`,`year`,`picture`,`douban_id`,`average`,`large_picture`,`date` as hot_date 
+					from movie_hot left join movie_movie on movie_hot.`movie_id`= movie_movie.`id order by hot_date desc.
+in E:\host\vhosts\movie\protected\admin\controllers\HotController.php (45)
+in E:\host\vhosts\movie\backend.php (13)
+2013/05/11 10:06:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in field list is ambiguous. The SQL statement executed was: select `id`,`title`,`country`,`language`,`pubdate`,`year`,`picture`,`douban_id`,`average`,`large_picture`,`date` as hot_date 
+					from movie_hot left join movie_movie on movie_hot.`movie_id`= movie_movie.`id order by hot_date desc' in E:\host\vhosts\movie\framework\db\CDbCommand.php:541
+Stack trace:
+#0 E:\host\vhosts\movie\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 E:\host\vhosts\movie\protected\admin\controllers\HotController.php(45): CDbCommand->queryAll()
+#2 E:\host\vhosts\movie\framework\web\actions\CInlineAction.php(49): HotController->actionIndex()
+#3 E:\host\vhosts\movie\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 E:\host\vhosts\movie\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 E:\host\vhosts\movie\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): CController->run('index')
+#7 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController('hot/index')
+#8 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 E:\host\vhosts\movie\backend.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/backend.php?r=hot/index
+HTTP_REFERER=http://movie/backend.php?r=site/index
+---
+2013/05/11 10:07:30 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'date' in field list is ambiguous. The SQL statement executed was: select movie_movie.`id`,`title`,`country`,`language`,`pubdate`,`year`,`picture`,`douban_id`,`average`,`large_picture`,`date` as hot_date 
+					from movie_hot left join movie_movie on movie_hot.`movie_id`= movie_movie.`id order by hot_date desc.
+in E:\host\vhosts\movie\protected\admin\controllers\HotController.php (45)
+in E:\host\vhosts\movie\backend.php (13)
+2013/05/11 10:07:30 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'date' in field list is ambiguous. The SQL statement executed was: select movie_movie.`id`,`title`,`country`,`language`,`pubdate`,`year`,`picture`,`douban_id`,`average`,`large_picture`,`date` as hot_date 
+					from movie_hot left join movie_movie on movie_hot.`movie_id`= movie_movie.`id order by hot_date desc' in E:\host\vhosts\movie\framework\db\CDbCommand.php:541
+Stack trace:
+#0 E:\host\vhosts\movie\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 E:\host\vhosts\movie\protected\admin\controllers\HotController.php(45): CDbCommand->queryAll()
+#2 E:\host\vhosts\movie\framework\web\actions\CInlineAction.php(49): HotController->actionIndex()
+#3 E:\host\vhosts\movie\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 E:\host\vhosts\movie\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 E:\host\vhosts\movie\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): CController->run('index')
+#7 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController('hot/index')
+#8 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 E:\host\vhosts\movie\backend.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/backend.php?r=hot/index
+HTTP_REFERER=http://movie/backend.php?r=site/index
+---
+2013/05/11 10:07:40 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'movie_movie.id order by hot_date desc' in 'on clause'. The SQL statement executed was: select movie_movie.`id`,`title`,`country`,`language`,`pubdate`,`year`,`picture`,`douban_id`,`average`,`large_picture`,movie_movie.`date` as hot_date 
+					from movie_hot left join movie_movie on movie_hot.`movie_id`= movie_movie.`id order by hot_date desc.
+in E:\host\vhosts\movie\protected\admin\controllers\HotController.php (45)
+in E:\host\vhosts\movie\backend.php (13)
+2013/05/11 10:07:40 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'movie_movie.id order by hot_date desc' in 'on clause'. The SQL statement executed was: select movie_movie.`id`,`title`,`country`,`language`,`pubdate`,`year`,`picture`,`douban_id`,`average`,`large_picture`,movie_movie.`date` as hot_date 
+					from movie_hot left join movie_movie on movie_hot.`movie_id`= movie_movie.`id order by hot_date desc' in E:\host\vhosts\movie\framework\db\CDbCommand.php:541
+Stack trace:
+#0 E:\host\vhosts\movie\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 E:\host\vhosts\movie\protected\admin\controllers\HotController.php(45): CDbCommand->queryAll()
+#2 E:\host\vhosts\movie\framework\web\actions\CInlineAction.php(49): HotController->actionIndex()
+#3 E:\host\vhosts\movie\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 E:\host\vhosts\movie\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 E:\host\vhosts\movie\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): CController->run('index')
+#7 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController('hot/index')
+#8 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 E:\host\vhosts\movie\backend.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/backend.php?r=hot/index
+HTTP_REFERER=http://movie/backend.php?r=site/index
+---
+2013/05/11 10:08:16 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'movie_movie.id  LIMIT 0,15' in 'on clause'. The SQL statement executed was: select movie_movie.`id`,`title`,`country`,`language`,`pubdate`,`year`,`picture`,`douban_id`,`average`,`large_picture`,movie_movie.`date` as hot_date 
+					from movie_hot left join movie_movie on movie_hot.`movie_id`= movie_movie.`id  LIMIT :offset,:limit.
+in E:\host\vhosts\movie\protected\admin\controllers\HotController.php (54)
+in E:\host\vhosts\movie\backend.php (13)
+2013/05/11 10:08:16 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'movie_movie.id  LIMIT 0,15' in 'on clause'. The SQL statement executed was: select movie_movie.`id`,`title`,`country`,`language`,`pubdate`,`year`,`picture`,`douban_id`,`average`,`large_picture`,movie_movie.`date` as hot_date 
+					from movie_hot left join movie_movie on movie_hot.`movie_id`= movie_movie.`id  LIMIT :offset,:limit' in E:\host\vhosts\movie\framework\db\CDbCommand.php:541
+Stack trace:
+#0 E:\host\vhosts\movie\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 E:\host\vhosts\movie\protected\admin\controllers\HotController.php(54): CDbCommand->queryAll()
+#2 E:\host\vhosts\movie\framework\web\actions\CInlineAction.php(49): HotController->actionIndex()
+#3 E:\host\vhosts\movie\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 E:\host\vhosts\movie\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 E:\host\vhosts\movie\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): CController->run('index')
+#7 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController('hot/index')
+#8 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 E:\host\vhosts\movie\backend.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/backend.php?r=hot/index
+HTTP_REFERER=http://movie/backend.php?r=site/index
+---
+2013/05/11 10:09:09 [error] [php] Undefined index: date (E:\host\vhosts\movie\protected\admin\views\hot\index.php:50)
+Stack trace:
+#0 E:\host\vhosts\movie\framework\web\CController.php(869): HotController->renderFile()
+#1 E:\host\vhosts\movie\framework\web\CController.php(782): HotController->renderPartial()
+#2 E:\host\vhosts\movie\protected\admin\controllers\HotController.php(60): HotController->render()
+#3 E:\host\vhosts\movie\framework\web\actions\CInlineAction.php(49): HotController->actionIndex()
+#4 E:\host\vhosts\movie\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\host\vhosts\movie\framework\web\CController.php(286): HotController->runAction()
+#6 E:\host\vhosts\movie\framework\web\CController.php(265): HotController->runActionWithFilters()
+#7 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): HotController->run()
+#8 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 E:\host\vhosts\movie\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=hot/index
+in E:\host\vhosts\movie\protected\admin\views\hot\index.php (50)
+in E:\host\vhosts\movie\protected\admin\controllers\HotController.php (60)
+in E:\host\vhosts\movie\backend.php (13)
+2013/05/11 10:42:12 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Array order by hot_date desc' at line 2. The SQL statement executed was: select movie_hot.`id`,`title`,`country`,`language`,`pubdate`,`year`,`picture`,`douban_id`,`average`,`large_picture`,movie_movie.`date` as hot_date 
+					from movie_hot left join movie_movie on movie_hot.`movie_id`= movie_movie.`id` Array order by hot_date desc.
+in E:\host\vhosts\movie\protected\admin\controllers\HotController.php (46)
+in E:\host\vhosts\movie\backend.php (13)
+2013/05/11 10:42:12 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Array order by hot_date desc' at line 2. The SQL statement executed was: select movie_hot.`id`,`title`,`country`,`language`,`pubdate`,`year`,`picture`,`douban_id`,`average`,`large_picture`,movie_movie.`date` as hot_date 
+					from movie_hot left join movie_movie on movie_hot.`movie_id`= movie_movie.`id` Array order by hot_date desc' in E:\host\vhosts\movie\framework\db\CDbCommand.php:541
+Stack trace:
+#0 E:\host\vhosts\movie\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 E:\host\vhosts\movie\protected\admin\controllers\HotController.php(46): CDbCommand->queryAll()
+#2 E:\host\vhosts\movie\framework\web\actions\CInlineAction.php(49): HotController->actionIndex()
+#3 E:\host\vhosts\movie\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 E:\host\vhosts\movie\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 E:\host\vhosts\movie\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): CController->run('index')
+#7 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController('hot/index')
+#8 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 E:\host\vhosts\movie\backend.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/backend.php?r=hot%2Findex&id=&title=&douban_id=&search=%E6%90%9C%E7%B4%A2
+HTTP_REFERER=http://movie/backend.php?r=hot/index
+---
+2013/05/11 10:42:23 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Array order by hot_date desc' at line 2. The SQL statement executed was: select movie_hot.`id`,`title`,`country`,`language`,`pubdate`,`year`,`picture`,`douban_id`,`average`,`large_picture`,movie_movie.`date` as hot_date 
+					from movie_hot left join movie_movie on movie_hot.`movie_id`= movie_movie.`id` Array order by hot_date desc.
+in E:\host\vhosts\movie\protected\admin\controllers\HotController.php (46)
+in E:\host\vhosts\movie\backend.php (13)
+2013/05/11 10:42:23 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Array order by hot_date desc' at line 2. The SQL statement executed was: select movie_hot.`id`,`title`,`country`,`language`,`pubdate`,`year`,`picture`,`douban_id`,`average`,`large_picture`,movie_movie.`date` as hot_date 
+					from movie_hot left join movie_movie on movie_hot.`movie_id`= movie_movie.`id` Array order by hot_date desc' in E:\host\vhosts\movie\framework\db\CDbCommand.php:541
+Stack trace:
+#0 E:\host\vhosts\movie\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 E:\host\vhosts\movie\protected\admin\controllers\HotController.php(46): CDbCommand->queryAll()
+#2 E:\host\vhosts\movie\framework\web\actions\CInlineAction.php(49): HotController->actionIndex()
+#3 E:\host\vhosts\movie\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 E:\host\vhosts\movie\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 E:\host\vhosts\movie\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 E:\host\vhosts\movie\framework\web\CWebApplication.php(282): CController->run('index')
+#7 E:\host\vhosts\movie\framework\web\CWebApplication.php(141): CWebApplication->runController('hot/index')
+#8 E:\host\vhosts\movie\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 E:\host\vhosts\movie\backend.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/backend.php?r=hot%2Findex&id=2&title=&douban_id=&search=%E6%90%9C%E7%B4%A2
+HTTP_REFERER=http://movie/backend.php?r=hot/index
+---
+2013/06/28 22:02:54 [error] [exception.CException] exception 'CException' with message 'Yii 应用程序只能被产生一次.' in D:\host\vhosts\ask\framework\YiiBase.php:152
+Stack trace:
+#0 D:\host\vhosts\ask\framework\base\CApplication.php(129): YiiBase::setApplication(Object(CWebApplication))
+#1 D:\host\vhosts\ask\framework\YiiBase.php(125): CApplication->__construct('D:\host\vhosts\...')
+#2 D:\host\vhosts\ask\framework\YiiBase.php(98): YiiBase::createApplication('CWebApplication', 'D:\host\vhosts\...')
+#3 D:\host\vhosts\ask\admin.php(13): YiiBase::createWebApplication('D:\host\vhosts\...')
+#4 D:\host\vhosts\ask\framework\YiiBase.php(421): include('D:\host\vhosts\...')
+#5 [internal function]: YiiBase::autoload('Admin')
+#6 D:\host\vhosts\ask\protected\admin\components\UserIdentity.php(13): spl_autoload_call('Admin')
+#7 D:\host\vhosts\ask\protected\admin\models\LoginForm.php(50): UserIdentity->authenticate()
+#8 D:\host\vhosts\ask\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#9 D:\host\vhosts\ask\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#10 D:\host\vhosts\ask\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#11 D:\host\vhosts\ask\protected\admin\controllers\PublicController.php(33): CModel->validate()
+#12 D:\host\vhosts\ask\framework\web\actions\CInlineAction.php(49): PublicController->actionCheckLogin()
+#13 D:\host\vhosts\ask\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 D:\host\vhosts\ask\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 D:\host\vhosts\ask\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): CController->run('checklogin')
+#17 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController('public/checklog...')
+#18 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#19 D:\host\vhosts\ask\admin.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/admin.php?r=public/checklogin
+HTTP_REFERER=http://ask/admin.php?r=Public/login
+---
+2013/06/28 22:05:45 [error] [exception.CException] exception 'CException' with message 'Yii 应用程序只能被产生一次.' in D:\host\vhosts\ask\framework\YiiBase.php:152
+Stack trace:
+#0 D:\host\vhosts\ask\framework\base\CApplication.php(129): YiiBase::setApplication(Object(CWebApplication))
+#1 D:\host\vhosts\ask\framework\YiiBase.php(125): CApplication->__construct('D:\host\vhosts\...')
+#2 D:\host\vhosts\ask\framework\YiiBase.php(98): YiiBase::createApplication('CWebApplication', 'D:\host\vhosts\...')
+#3 D:\host\vhosts\ask\admin.php(13): YiiBase::createWebApplication('D:\host\vhosts\...')
+#4 D:\host\vhosts\ask\framework\YiiBase.php(421): include('D:\host\vhosts\...')
+#5 [internal function]: YiiBase::autoload('Admin')
+#6 D:\host\vhosts\ask\protected\admin\components\UserIdentity.php(13): spl_autoload_call('Admin')
+#7 D:\host\vhosts\ask\protected\admin\models\LoginForm.php(50): UserIdentity->authenticate()
+#8 D:\host\vhosts\ask\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#9 D:\host\vhosts\ask\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#10 D:\host\vhosts\ask\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#11 D:\host\vhosts\ask\protected\admin\controllers\PublicController.php(33): CModel->validate()
+#12 D:\host\vhosts\ask\framework\web\actions\CInlineAction.php(49): PublicController->actionCheckLogin()
+#13 D:\host\vhosts\ask\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 D:\host\vhosts\ask\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 D:\host\vhosts\ask\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): CController->run('checklogin')
+#17 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController('public/checklog...')
+#18 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#19 D:\host\vhosts\ask\admin.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/admin.php?r=public/checklogin
+HTTP_REFERER=http://ask/admin.php?r=public/login
+---
+2013/06/28 22:33:28 [error] [exception.CException] exception 'CException' with message '属性 "Admin.avatar_file" 未被定义.' in D:\host\vhosts\ask\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\host\vhosts\ask\framework\db\ar\CActiveRecord.php(143): CComponent->__get('avatar_file')
+#1 D:\host\vhosts\ask\protected\admin\views\layouts\main.php(27): CActiveRecord->__get('avatar_file')
+#2 D:\host\vhosts\ask\framework\web\CBaseController.php(126): require('D:\host\vhosts\...')
+#3 D:\host\vhosts\ask\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\host\vhosts\...', Array, true)
+#4 D:\host\vhosts\ask\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\host\vhosts\...', Array, true)
+#5 D:\host\vhosts\ask\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="contai...')
+#6 D:\host\vhosts\ask\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="contai...')
+#7 D:\host\vhosts\ask\framework\web\CBaseController.php(206): COutputProcessor->run()
+#8 D:\host\vhosts\ask\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 D:\host\vhosts\ask\protected\admin\views\layouts\column.php(5): CBaseController->endContent()
+#10 D:\host\vhosts\ask\framework\web\CBaseController.php(126): require('D:\host\vhosts\...')
+#11 D:\host\vhosts\ask\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\host\vhosts\...', Array, true)
+#12 D:\host\vhosts\ask\framework\web\CController.php(784): CBaseController->renderFile('D:\host\vhosts\...', Array, true)
+#13 D:\host\vhosts\ask\protected\admin\controllers\SiteController.php(10): CController->render('index')
+#14 D:\host\vhosts\ask\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#15 D:\host\vhosts\ask\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 D:\host\vhosts\ask\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 D:\host\vhosts\ask\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): CController->run('index')
+#19 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#20 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#21 D:\host\vhosts\ask\backend.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/backend.php?r=site/index
+HTTP_REFERER=http://ask/backend.php?r=public/login
+---
+2013/06/28 23:34:05 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'left join `ask_user` on (`ask_user`.`id` = `ask_movie`.`published_uid`)' at line 3. The SQL statement executed was: select `ask_movie`.`id`,`ask_movie`.`question_content`,`ask_movie`.`add_time`,`ask_movie`.`update_time`,`ask_movie`.`answer_count`,`ask_movie`.`view_count`,
+				`ask_movie`.`focus_count`,`ask_movie`.`comment_count`,`ask_movie`.`best_answer`,`ask_movie`.`ip`,`ask_user`.`username`,`ask_user`.`uid`
+				left join `ask_user` on (`ask_user`.`id` = `ask_movie`.`published_uid`)
+				.
+in D:\host\vhosts\ask\protected\admin\controllers\QuestionController.php (18)
+in D:\host\vhosts\ask\backend.php (13)
+2013/06/28 23:34:05 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'left join `ask_user` on (`ask_user`.`id` = `ask_movie`.`published_uid`)' at line 3. The SQL statement executed was: select `ask_movie`.`id`,`ask_movie`.`question_content`,`ask_movie`.`add_time`,`ask_movie`.`update_time`,`ask_movie`.`answer_count`,`ask_movie`.`view_count`,
+				`ask_movie`.`focus_count`,`ask_movie`.`comment_count`,`ask_movie`.`best_answer`,`ask_movie`.`ip`,`ask_user`.`username`,`ask_user`.`uid`
+				left join `ask_user` on (`ask_user`.`id` = `ask_movie`.`published_uid`)
+				' in D:\host\vhosts\ask\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\host\vhosts\ask\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\host\vhosts\ask\protected\admin\controllers\QuestionController.php(18): CDbCommand->queryAll()
+#2 D:\host\vhosts\ask\framework\web\actions\CInlineAction.php(49): QuestionController->actionIndex()
+#3 D:\host\vhosts\ask\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\host\vhosts\ask\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\host\vhosts\ask\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): CController->run('index')
+#7 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController('question/index')
+#8 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\host\vhosts\ask\backend.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/backend.php?r=question/index
+---
+2013/06/28 23:35:43 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ask.ask_movie' doesn't exist. The SQL statement executed was: select `ask_movie`.`id`,`ask_movie`.`question_content`,`ask_movie`.`add_time`,`ask_movie`.`update_time`,`ask_movie`.`answer_count`,`ask_movie`.`view_count`,
+				`ask_movie`.`focus_count`,`ask_movie`.`comment_count`,`ask_movie`.`best_answer`,`ask_movie`.`ip`,`ask_user`.`username`,`ask_user`.`uid`
+				from `ask_movie`				
+				left join `ask_user` on (`ask_user`.`id` = `ask_movie`.`published_uid`)
+				.
+in D:\host\vhosts\ask\protected\admin\controllers\QuestionController.php (19)
+in D:\host\vhosts\ask\backend.php (13)
+2013/06/28 23:35:43 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ask.ask_movie' doesn't exist. The SQL statement executed was: select `ask_movie`.`id`,`ask_movie`.`question_content`,`ask_movie`.`add_time`,`ask_movie`.`update_time`,`ask_movie`.`answer_count`,`ask_movie`.`view_count`,
+				`ask_movie`.`focus_count`,`ask_movie`.`comment_count`,`ask_movie`.`best_answer`,`ask_movie`.`ip`,`ask_user`.`username`,`ask_user`.`uid`
+				from `ask_movie`				
+				left join `ask_user` on (`ask_user`.`id` = `ask_movie`.`published_uid`)
+				' in D:\host\vhosts\ask\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\host\vhosts\ask\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\host\vhosts\ask\protected\admin\controllers\QuestionController.php(19): CDbCommand->queryAll()
+#2 D:\host\vhosts\ask\framework\web\actions\CInlineAction.php(49): QuestionController->actionIndex()
+#3 D:\host\vhosts\ask\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\host\vhosts\ask\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\host\vhosts\ask\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): CController->run('index')
+#7 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController('question/index')
+#8 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\host\vhosts\ask\backend.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/backend.php?r=question/index
+---
+2013/06/28 23:36:13 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ask.ask_user' doesn't exist. The SQL statement executed was: select `ask_question`.`id`,`ask_question`.`question_content`,`ask_question`.`add_time`,`ask_question`.`update_time`,`ask_question`.`answer_count`,`ask_question`.`view_count`,
+				`ask_question`.`focus_count`,`ask_question`.`comment_count`,`ask_question`.`best_answer`,`ask_question`.`ip`,`ask_user`.`username`,`ask_user`.`uid`
+				from `ask_question`				
+				left join `ask_user` on (`ask_user`.`id` = `ask_question`.`published_uid`)
+				.
+in D:\host\vhosts\ask\protected\admin\controllers\QuestionController.php (19)
+in D:\host\vhosts\ask\backend.php (13)
+2013/06/28 23:36:13 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ask.ask_user' doesn't exist. The SQL statement executed was: select `ask_question`.`id`,`ask_question`.`question_content`,`ask_question`.`add_time`,`ask_question`.`update_time`,`ask_question`.`answer_count`,`ask_question`.`view_count`,
+				`ask_question`.`focus_count`,`ask_question`.`comment_count`,`ask_question`.`best_answer`,`ask_question`.`ip`,`ask_user`.`username`,`ask_user`.`uid`
+				from `ask_question`				
+				left join `ask_user` on (`ask_user`.`id` = `ask_question`.`published_uid`)
+				' in D:\host\vhosts\ask\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\host\vhosts\ask\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\host\vhosts\ask\protected\admin\controllers\QuestionController.php(19): CDbCommand->queryAll()
+#2 D:\host\vhosts\ask\framework\web\actions\CInlineAction.php(49): QuestionController->actionIndex()
+#3 D:\host\vhosts\ask\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\host\vhosts\ask\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\host\vhosts\ask\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): CController->run('index')
+#7 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController('question/index')
+#8 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\host\vhosts\ask\backend.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/backend.php?r=question/index
+---
+2013/06/28 23:36:32 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ask_users.id' in 'on clause'. The SQL statement executed was: select `ask_question`.`id`,`ask_question`.`question_content`,`ask_question`.`add_time`,`ask_question`.`update_time`,`ask_question`.`answer_count`,`ask_question`.`view_count`,
+				`ask_question`.`focus_count`,`ask_question`.`comment_count`,`ask_question`.`best_answer`,`ask_question`.`ip`,`ask_users`.`username`,`ask_users`.`uid`
+				from `ask_question`				
+				left join `ask_users` on (`ask_users`.`id` = `ask_question`.`published_uid`)
+				.
+in D:\host\vhosts\ask\protected\admin\controllers\QuestionController.php (19)
+in D:\host\vhosts\ask\backend.php (13)
+2013/06/28 23:36:32 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ask_users.id' in 'on clause'. The SQL statement executed was: select `ask_question`.`id`,`ask_question`.`question_content`,`ask_question`.`add_time`,`ask_question`.`update_time`,`ask_question`.`answer_count`,`ask_question`.`view_count`,
+				`ask_question`.`focus_count`,`ask_question`.`comment_count`,`ask_question`.`best_answer`,`ask_question`.`ip`,`ask_users`.`username`,`ask_users`.`uid`
+				from `ask_question`				
+				left join `ask_users` on (`ask_users`.`id` = `ask_question`.`published_uid`)
+				' in D:\host\vhosts\ask\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\host\vhosts\ask\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\host\vhosts\ask\protected\admin\controllers\QuestionController.php(19): CDbCommand->queryAll()
+#2 D:\host\vhosts\ask\framework\web\actions\CInlineAction.php(49): QuestionController->actionIndex()
+#3 D:\host\vhosts\ask\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\host\vhosts\ask\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\host\vhosts\ask\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): CController->run('index')
+#7 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController('question/index')
+#8 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\host\vhosts\ask\backend.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/backend.php?r=question/index
+---
+2013/06/28 23:42:23 [error] [php] Undefined index: content (D:\host\vhosts\ask\protected\admin\views\question\index.php:26)
+Stack trace:
+#0 D:\host\vhosts\ask\framework\web\CController.php(869): QuestionController->renderFile()
+#1 D:\host\vhosts\ask\framework\web\CController.php(782): QuestionController->renderPartial()
+#2 D:\host\vhosts\ask\protected\admin\controllers\QuestionController.php(23): QuestionController->render()
+#3 D:\host\vhosts\ask\framework\web\actions\CInlineAction.php(49): QuestionController->actionIndex()
+#4 D:\host\vhosts\ask\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\host\vhosts\ask\framework\web\CController.php(286): QuestionController->runAction()
+#6 D:\host\vhosts\ask\framework\web\CController.php(265): QuestionController->runActionWithFilters()
+#7 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): QuestionController->run()
+#8 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\host\vhosts\ask\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=question/index
+in D:\host\vhosts\ask\protected\admin\views\question\index.php (26)
+in D:\host\vhosts\ask\protected\admin\controllers\QuestionController.php (23)
+in D:\host\vhosts\ask\backend.php (13)
+2013/06/29 19:29:03 [error] [php] Undefined index: lock (D:\host\vhosts\ask\protected\admin\views\question\index.php:41)
+Stack trace:
+#0 D:\host\vhosts\ask\framework\web\CController.php(869): QuestionController->renderFile()
+#1 D:\host\vhosts\ask\framework\web\CController.php(782): QuestionController->renderPartial()
+#2 D:\host\vhosts\ask\protected\admin\controllers\QuestionController.php(32): QuestionController->render()
+#3 D:\host\vhosts\ask\framework\web\actions\CInlineAction.php(49): QuestionController->actionIndex()
+#4 D:\host\vhosts\ask\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\host\vhosts\ask\framework\web\CController.php(286): QuestionController->runAction()
+#6 D:\host\vhosts\ask\framework\web\CController.php(265): QuestionController->runActionWithFilters()
+#7 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): QuestionController->run()
+#8 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\host\vhosts\ask\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=question/index
+in D:\host\vhosts\ask\protected\admin\views\question\index.php (41)
+in D:\host\vhosts\ask\protected\admin\controllers\QuestionController.php (32)
+in D:\host\vhosts\ask\backend.php (13)
+2013/06/29 19:29:24 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.`focus_count`,`ask_question`.`comment_count`,`ask_question`.`best_answer`,`ask_' at line 2. The SQL statement executed was: select `ask_question`.`id`,`ask_question`.`question_content`,`ask_question`.`add_time`,`ask_question`.`update_time`,`ask_question`.`answer_count`,`ask_question`.`view_count`,`ask_question`.`lock`
+				`ask_question`.`focus_count`,`ask_question`.`comment_count`,`ask_question`.`best_answer`,`ask_question`.`ip`,`ask_users`.`username`,`ask_users`.`uid`
+				from `ask_question`				
+				left join `ask_users` on (`ask_users`.`uid` = `ask_question`.`published_uid`) .
+in D:\host\vhosts\ask\protected\admin\controllers\QuestionController.php (20)
+in D:\host\vhosts\ask\backend.php (13)
+2013/06/29 19:29:24 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.`focus_count`,`ask_question`.`comment_count`,`ask_question`.`best_answer`,`ask_' at line 2. The SQL statement executed was: select `ask_question`.`id`,`ask_question`.`question_content`,`ask_question`.`add_time`,`ask_question`.`update_time`,`ask_question`.`answer_count`,`ask_question`.`view_count`,`ask_question`.`lock`
+				`ask_question`.`focus_count`,`ask_question`.`comment_count`,`ask_question`.`best_answer`,`ask_question`.`ip`,`ask_users`.`username`,`ask_users`.`uid`
+				from `ask_question`				
+				left join `ask_users` on (`ask_users`.`uid` = `ask_question`.`published_uid`) ' in D:\host\vhosts\ask\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\host\vhosts\ask\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\host\vhosts\ask\protected\admin\controllers\QuestionController.php(20): CDbCommand->queryAll()
+#2 D:\host\vhosts\ask\framework\web\actions\CInlineAction.php(49): QuestionController->actionIndex()
+#3 D:\host\vhosts\ask\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\host\vhosts\ask\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\host\vhosts\ask\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): CController->run('index')
+#7 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController('question/index')
+#8 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\host\vhosts\ask\backend.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/backend.php?r=question/index
+---
+2013/06/29 19:40:01 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ask_question_contenttion.update_time' in 'field list'. The SQL statement executed was: select `ask_question`.`id`,`ask_question`.`question_content`,`ask_question`.`add_time`,`ask_question_contenttion`.`update_time`,`ask_question`.`answer_count`,`ask_question`.`view_count`,`ask_question`.`lock`,`ask_question`.`focus_count`,`ask_question`.`comment_count`,`ask_question`.`best_answer`,`ask_question`.`ip`,`ask_users`.`username`,`ask_users`.`uid`
+				from `ask_question`				
+				left join `ask_users` on (`ask_users`.`uid` = `ask_question`.`published_uid`) where `ask_question`.`question_content` like '的'.
+in D:\host\vhosts\ask\protected\admin\controllers\QuestionController.php (26)
+in D:\host\vhosts\ask\backend.php (13)
+2013/06/29 19:40:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ask_question_contenttion.update_time' in 'field list'. The SQL statement executed was: select `ask_question`.`id`,`ask_question`.`question_content`,`ask_question`.`add_time`,`ask_question_contenttion`.`update_time`,`ask_question`.`answer_count`,`ask_question`.`view_count`,`ask_question`.`lock`,`ask_question`.`focus_count`,`ask_question`.`comment_count`,`ask_question`.`best_answer`,`ask_question`.`ip`,`ask_users`.`username`,`ask_users`.`uid`
+				from `ask_question`				
+				left join `ask_users` on (`ask_users`.`uid` = `ask_question`.`published_uid`) where `ask_question`.`question_content` like '的'' in D:\host\vhosts\ask\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\host\vhosts\ask\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\host\vhosts\ask\protected\admin\controllers\QuestionController.php(26): CDbCommand->queryAll()
+#2 D:\host\vhosts\ask\framework\web\actions\CInlineAction.php(49): QuestionController->actionIndex()
+#3 D:\host\vhosts\ask\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\host\vhosts\ask\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\host\vhosts\ask\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): CController->run('index')
+#7 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController('question/index')
+#8 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\host\vhosts\ask\backend.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/backend.php?r=question/index
+HTTP_REFERER=http://ask/backend.php?r=question/index
+---
+2013/06/29 19:56:34 [error] [php] Undefined variable: condition (D:\host\vhosts\ask\protected\admin\controllers\QuestionController.php:27)
+Stack trace:
+#0 D:\host\vhosts\ask\framework\web\CController.php(286): QuestionController->runAction()
+#1 D:\host\vhosts\ask\framework\web\CController.php(265): QuestionController->runActionWithFilters()
+#2 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): QuestionController->run()
+#3 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\host\vhosts\ask\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=question/index
+in D:\host\vhosts\ask\protected\admin\controllers\QuestionController.php (27)
+in D:\host\vhosts\ask\backend.php (13)
+2013/06/29 20:00:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index?uid=1" 动作.' in D:\host\vhosts\ask\framework\web\CController.php:483
+Stack trace:
+#0 D:\host\vhosts\ask\framework\web\CController.php(270): CController->missingAction('index?uid=1')
+#1 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): CController->run('index?uid=1')
+#2 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController('question/index?...')
+#3 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\host\vhosts\ask\backend.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/backend.php?r=question/index?uid=1
+---
+2013/06/29 20:01:12 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`ask_question`.`question_content` like '%提问%'' at line 3. The SQL statement executed was: select `ask_question`.`id`,`ask_question`.`question_content`,`ask_question`.`add_time`,`ask_question`.`update_time`,`ask_question`.`answer_count`,`ask_question`.`view_count`,`ask_question`.`lock`,`ask_question`.`focus_count`,`ask_question`.`comment_count`,`ask_question`.`best_answer`,`ask_question`.`ip`,`ask_users`.`username`,`ask_users`.`uid`
+				from `ask_question`				
+				left join `ask_users` on (`ask_users`.`uid` = `ask_question`.`published_uid`) where `ask_users`.`uid`=1AND`ask_question`.`question_content` like '%提问%'.
+in D:\host\vhosts\ask\protected\admin\controllers\QuestionController.php (37)
+in D:\host\vhosts\ask\backend.php (13)
+2013/06/29 20:01:12 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`ask_question`.`question_content` like '%提问%'' at line 3. The SQL statement executed was: select `ask_question`.`id`,`ask_question`.`question_content`,`ask_question`.`add_time`,`ask_question`.`update_time`,`ask_question`.`answer_count`,`ask_question`.`view_count`,`ask_question`.`lock`,`ask_question`.`focus_count`,`ask_question`.`comment_count`,`ask_question`.`best_answer`,`ask_question`.`ip`,`ask_users`.`username`,`ask_users`.`uid`
+				from `ask_question`				
+				left join `ask_users` on (`ask_users`.`uid` = `ask_question`.`published_uid`) where `ask_users`.`uid`=1AND`ask_question`.`question_content` like '%提问%'' in D:\host\vhosts\ask\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\host\vhosts\ask\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\host\vhosts\ask\protected\admin\controllers\QuestionController.php(37): CDbCommand->queryAll()
+#2 D:\host\vhosts\ask\framework\web\actions\CInlineAction.php(49): QuestionController->actionIndex()
+#3 D:\host\vhosts\ask\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\host\vhosts\ask\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\host\vhosts\ask\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): CController->run('index')
+#7 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController('question/index')
+#8 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\host\vhosts\ask\backend.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/backend.php?r=question/index&uid=1
+HTTP_REFERER=http://ask/backend.php?r=question/index&uid=1
+---
+2013/06/30 11:03:37 [error] [php] include(QuestionComment.php): failed to open stream: No such file or directory (D:\host\vhosts\ask\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\host\vhosts\ask\protected\admin\controllers\QuestionController.php(91): spl_autoload_call()
+#1 unknown(0): QuestionController->actionDelete()
+#2 D:\host\vhosts\ask\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#3 D:\host\vhosts\ask\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 D:\host\vhosts\ask\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\host\vhosts\ask\framework\web\CController.php(286): QuestionController->runAction()
+#6 D:\host\vhosts\ask\framework\web\CController.php(265): QuestionController->runActionWithFilters()
+#7 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): QuestionController->run()
+#8 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\host\vhosts\ask\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=question/delete&id=2
+in D:\host\vhosts\ask\protected\admin\controllers\QuestionController.php (91)
+in D:\host\vhosts\ask\backend.php (13)
+2013/06/30 11:35:24 [error] [exception.CException] exception 'CException' with message '属性 "CDbDataReader.id" 未被定义.' in D:\host\vhosts\ask\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\host\vhosts\ask\protected\admin\controllers\QuestionController.php(61): CComponent->__get('id')
+#1 [internal function]: QuestionController->actionUpdate('1')
+#2 D:\host\vhosts\ask\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(QuestionController), Array)
+#3 D:\host\vhosts\ask\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(QuestionController), Object(ReflectionMethod), Array)
+#4 D:\host\vhosts\ask\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\host\vhosts\ask\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\host\vhosts\ask\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): CController->run('update')
+#8 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController('question/update')
+#9 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\host\vhosts\ask\backend.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/backend.php?r=question/update&id=1
+---
+2013/06/30 11:35:41 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: select `ask_question`.`id`,`ask_question`.`question_content`,`ask_question`.`question_detail`,`ask_question`.`add_time`,`ask_question`.`update_time`,`ask_question`.`published_uid`,`ask_question`.`answer_count`,`ask_question`.`view_count`,`ask_question`.`focus_count`,`ask_question`.`comment_count`,`ask_question`.`best_answer`,`ask_question`.`lock`,`ask_question`.`ip`,`ask_users`.`username` from `ask_question` left join `ask_users` on (`ask_users`.`uid`=`ask_question`.`published_uid`) where `ask_question`.`id`=:id.
+in D:\host\vhosts\ask\protected\admin\controllers\QuestionController.php (60)
+in D:\host\vhosts\ask\backend.php (13)
+2013/06/30 11:35:41 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: select `ask_question`.`id`,`ask_question`.`question_content`,`ask_question`.`question_detail`,`ask_question`.`add_time`,`ask_question`.`update_time`,`ask_question`.`published_uid`,`ask_question`.`answer_count`,`ask_question`.`view_count`,`ask_question`.`focus_count`,`ask_question`.`comment_count`,`ask_question`.`best_answer`,`ask_question`.`lock`,`ask_question`.`ip`,`ask_users`.`username` from `ask_question` left join `ask_users` on (`ask_users`.`uid`=`ask_question`.`published_uid`) where `ask_question`.`id`=:id' in D:\host\vhosts\ask\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\host\vhosts\ask\framework\db\CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\host\vhosts\ask\protected\admin\controllers\QuestionController.php(60): CDbCommand->queryRow(Array)
+#2 [internal function]: QuestionController->actionUpdate('1')
+#3 D:\host\vhosts\ask\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(QuestionController), Array)
+#4 D:\host\vhosts\ask\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(QuestionController), Object(ReflectionMethod), Array)
+#5 D:\host\vhosts\ask\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\host\vhosts\ask\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\host\vhosts\ask\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): CController->run('update')
+#9 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController('question/update')
+#10 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 D:\host\vhosts\ask\backend.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/backend.php?r=question/update&id=1
+---
+2013/06/30 11:37:40 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: select `ask_question`.`id`,`ask_question`.`question_content`,`ask_question`.`question_detail`,`ask_question`.`add_time`,`ask_question`.`update_time`,`ask_question`.`published_uid`,`ask_question`.`answer_count`,`ask_question`.`view_count`,`ask_question`.`focus_count`,`ask_question`.`comment_count`,`ask_question`.`best_answer`,`ask_question`.`lock`,`ask_question`.`ip`,`ask_users`.`username` from `ask_question` left join `ask_users` on (`ask_users`.`uid`=`ask_question`.`published_uid`) where `ask_question`.`id`=:id.
+in D:\host\vhosts\ask\protected\admin\controllers\QuestionController.php (60)
+in D:\host\vhosts\ask\backend.php (13)
+2013/06/30 11:37:40 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: select `ask_question`.`id`,`ask_question`.`question_content`,`ask_question`.`question_detail`,`ask_question`.`add_time`,`ask_question`.`update_time`,`ask_question`.`published_uid`,`ask_question`.`answer_count`,`ask_question`.`view_count`,`ask_question`.`focus_count`,`ask_question`.`comment_count`,`ask_question`.`best_answer`,`ask_question`.`lock`,`ask_question`.`ip`,`ask_users`.`username` from `ask_question` left join `ask_users` on (`ask_users`.`uid`=`ask_question`.`published_uid`) where `ask_question`.`id`=:id' in D:\host\vhosts\ask\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\host\vhosts\ask\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\host\vhosts\ask\protected\admin\controllers\QuestionController.php(60): CDbCommand->queryAll(Array)
+#2 [internal function]: QuestionController->actionUpdate('1')
+#3 D:\host\vhosts\ask\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(QuestionController), Array)
+#4 D:\host\vhosts\ask\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(QuestionController), Object(ReflectionMethod), Array)
+#5 D:\host\vhosts\ask\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\host\vhosts\ask\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\host\vhosts\ask\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): CController->run('update')
+#9 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController('question/update')
+#10 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 D:\host\vhosts\ask\backend.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/backend.php?r=question/update&id=1
+---
+2013/06/30 14:05:45 [error] [php] Undefined index: update (D:\host\vhosts\ask\protected\admin\views\question\update.php:39)
+Stack trace:
+#0 D:\host\vhosts\ask\framework\web\CController.php(869): QuestionController->renderFile()
+#1 D:\host\vhosts\ask\framework\web\CController.php(782): QuestionController->renderPartial()
+#2 D:\host\vhosts\ask\protected\admin\controllers\QuestionController.php(63): QuestionController->render()
+#3 unknown(0): QuestionController->actionUpdate()
+#4 D:\host\vhosts\ask\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 D:\host\vhosts\ask\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 D:\host\vhosts\ask\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\host\vhosts\ask\framework\web\CController.php(286): QuestionController->runAction()
+#8 D:\host\vhosts\ask\framework\web\CController.php(265): QuestionController->runActionWithFilters()
+#9 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): QuestionController->run()
+#10 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 D:\host\vhosts\ask\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=question/update&id=3
+in D:\host\vhosts\ask\protected\admin\views\question\update.php (39)
+in D:\host\vhosts\ask\protected\admin\controllers\QuestionController.php (63)
+in D:\host\vhosts\ask\backend.php (13)
+2013/06/30 14:19:37 [error] [php] Undefined variable: _PSOT (D:\host\vhosts\ask\protected\admin\controllers\QuestionController.php:77)
+Stack trace:
+#0 D:\host\vhosts\ask\framework\web\CController.php(286): QuestionController->runAction()
+#1 D:\host\vhosts\ask\framework\web\CController.php(265): QuestionController->runActionWithFilters()
+#2 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): QuestionController->run()
+#3 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\host\vhosts\ask\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=question/checkupdate
+in D:\host\vhosts\ask\protected\admin\controllers\QuestionController.php (77)
+in D:\host\vhosts\ask\backend.php (13)
+2013/06/30 15:05:09 [error] [php] Undefined variable: count (D:\host\vhosts\ask\protected\admin\views\user\index.php:10)
+Stack trace:
+#0 D:\host\vhosts\ask\framework\web\CController.php(869): UserController->renderFile()
+#1 D:\host\vhosts\ask\framework\web\CController.php(782): UserController->renderPartial()
+#2 D:\host\vhosts\ask\protected\admin\controllers\UserController.php(16): UserController->render()
+#3 D:\host\vhosts\ask\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#4 D:\host\vhosts\ask\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\host\vhosts\ask\framework\web\CController.php(286): UserController->runAction()
+#6 D:\host\vhosts\ask\framework\web\CController.php(265): UserController->runActionWithFilters()
+#7 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): UserController->run()
+#8 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\host\vhosts\ask\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=user/index
+in D:\host\vhosts\ask\protected\admin\views\user\index.php (10)
+in D:\host\vhosts\ask\protected\admin\controllers\UserController.php (16)
+in D:\host\vhosts\ask\backend.php (13)
+2013/06/30 15:09:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "add" 动作.' in D:\host\vhosts\ask\framework\web\CController.php:483
+Stack trace:
+#0 D:\host\vhosts\ask\framework\web\CController.php(270): CController->missingAction('add')
+#1 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): CController->run('add')
+#2 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController('user/add')
+#3 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\host\vhosts\ask\backend.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/backend.php?r=user/add
+HTTP_REFERER=http://ask/backend.php?r=site/index
+---
+2013/06/30 15:14:11 [error] [php] Undefined index: last_login (D:\host\vhosts\ask\protected\admin\views\user\index.php:50)
+Stack trace:
+#0 D:\host\vhosts\ask\framework\web\CController.php(869): UserController->renderFile()
+#1 D:\host\vhosts\ask\framework\web\CController.php(782): UserController->renderPartial()
+#2 D:\host\vhosts\ask\protected\admin\controllers\UserController.php(47): UserController->render()
+#3 D:\host\vhosts\ask\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#4 D:\host\vhosts\ask\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\host\vhosts\ask\framework\web\CController.php(286): UserController->runAction()
+#6 D:\host\vhosts\ask\framework\web\CController.php(265): UserController->runActionWithFilters()
+#7 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): UserController->run()
+#8 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\host\vhosts\ask\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=user/index
+in D:\host\vhosts\ask\protected\admin\views\user\index.php (50)
+in D:\host\vhosts\ask\protected\admin\controllers\UserController.php (47)
+in D:\host\vhosts\ask\backend.php (13)
+2013/06/30 15:14:57 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`ask_users`.`reg_ip`,`ask_users`.`last_login` from `ask_users`' at line 1. The SQL statement executed was: select `ask_users`.`uid`,`ask_users`.`username`,`ask_users`.`email`,`ask_users`.`avatar_file`,`ask_users`.`sex`,`ask_users`.`birthday`,`ask_users`.`reg_time`m`ask_users`.`reg_ip`,`ask_users`.`last_login` from `ask_users`.
+in D:\host\vhosts\ask\protected\admin\controllers\UserController.php (34)
+in D:\host\vhosts\ask\backend.php (13)
+2013/06/30 15:14:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`ask_users`.`reg_ip`,`ask_users`.`last_login` from `ask_users`' at line 1. The SQL statement executed was: select `ask_users`.`uid`,`ask_users`.`username`,`ask_users`.`email`,`ask_users`.`avatar_file`,`ask_users`.`sex`,`ask_users`.`birthday`,`ask_users`.`reg_time`m`ask_users`.`reg_ip`,`ask_users`.`last_login` from `ask_users`' in D:\host\vhosts\ask\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\host\vhosts\ask\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\host\vhosts\ask\protected\admin\controllers\UserController.php(34): CDbCommand->queryAll()
+#2 D:\host\vhosts\ask\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#3 D:\host\vhosts\ask\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\host\vhosts\ask\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\host\vhosts\ask\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): CController->run('index')
+#7 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController('user/index')
+#8 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\host\vhosts\ask\backend.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/backend.php?r=user/index
+---
+2013/06/30 15:31:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "update" 动作.' in D:\host\vhosts\ask\framework\web\CController.php:483
+Stack trace:
+#0 D:\host\vhosts\ask\framework\web\CController.php(270): CController->missingAction('update')
+#1 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): CController->run('update')
+#2 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController('user/update')
+#3 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\host\vhosts\ask\backend.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/backend.php?r=user/update&uid=2
+HTTP_REFERER=http://ask/backend.php?r=user/index
+---
+2013/06/30 15:41:50 [error] [php] Undefined variable: model (D:\host\vhosts\ask\protected\admin\views\user\update.php:7)
+Stack trace:
+#0 D:\host\vhosts\ask\framework\web\CController.php(869): UserController->renderFile()
+#1 D:\host\vhosts\ask\framework\web\CController.php(782): UserController->renderPartial()
+#2 D:\host\vhosts\ask\protected\admin\controllers\UserController.php(50): UserController->render()
+#3 unknown(0): UserController->actionUpdate()
+#4 D:\host\vhosts\ask\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 D:\host\vhosts\ask\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 D:\host\vhosts\ask\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\host\vhosts\ask\framework\web\CController.php(286): UserController->runAction()
+#8 D:\host\vhosts\ask\framework\web\CController.php(265): UserController->runActionWithFilters()
+#9 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): UserController->run()
+#10 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 D:\host\vhosts\ask\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=user/update&uid=2
+in D:\host\vhosts\ask\protected\admin\views\user\update.php (7)
+in D:\host\vhosts\ask\protected\admin\controllers\UserController.php (50)
+in D:\host\vhosts\ask\backend.php (13)
+2013/06/30 15:47:28 [error] [php] Use of undefined constant selected - assumed 'selected' (D:\host\vhosts\ask\protected\admin\views\user\update.php:27)
+Stack trace:
+#0 D:\host\vhosts\ask\framework\web\CController.php(869): UserController->renderFile()
+#1 D:\host\vhosts\ask\framework\web\CController.php(782): UserController->renderPartial()
+#2 D:\host\vhosts\ask\protected\admin\controllers\UserController.php(50): UserController->render()
+#3 unknown(0): UserController->actionUpdate()
+#4 D:\host\vhosts\ask\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 D:\host\vhosts\ask\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 D:\host\vhosts\ask\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\host\vhosts\ask\framework\web\CController.php(286): UserController->runAction()
+#8 D:\host\vhosts\ask\framework\web\CController.php(265): UserController->runActionWithFilters()
+#9 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): UserController->run()
+#10 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 D:\host\vhosts\ask\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=user/update&uid=1
+in D:\host\vhosts\ask\protected\admin\views\user\update.php (27)
+in D:\host\vhosts\ask\protected\admin\controllers\UserController.php (50)
+in D:\host\vhosts\ask\backend.php (13)
+2013/06/30 16:00:54 [error] [php] Missing argument 2 for CClientScript::registerScript(), called in D:\host\vhosts\ask\protected\admin\views\user\update.php on line 2 and defined (D:\host\vhosts\ask\framework\web\CClientScript.php:618)
+Stack trace:
+#0 D:\host\vhosts\ask\framework\web\CBaseController.php(95): UserController->renderInternal()
+#1 D:\host\vhosts\ask\framework\web\CController.php(869): UserController->renderFile()
+#2 D:\host\vhosts\ask\framework\web\CController.php(782): UserController->renderPartial()
+#3 D:\host\vhosts\ask\protected\admin\controllers\UserController.php(50): UserController->render()
+#4 unknown(0): UserController->actionUpdate()
+#5 D:\host\vhosts\ask\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#6 D:\host\vhosts\ask\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 D:\host\vhosts\ask\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 D:\host\vhosts\ask\framework\web\CController.php(286): UserController->runAction()
+#9 D:\host\vhosts\ask\framework\web\CController.php(265): UserController->runActionWithFilters()
+#10 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): UserController->run()
+#11 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 D:\host\vhosts\ask\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=user/update&uid=2
+in D:\host\vhosts\ask\protected\admin\views\user\update.php (2)
+in D:\host\vhosts\ask\protected\admin\controllers\UserController.php (50)
+in D:\host\vhosts\ask\backend.php (13)
+2013/06/30 22:23:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "add" 动作.' in D:\host\vhosts\ask\framework\web\CController.php:483
+Stack trace:
+#0 D:\host\vhosts\ask\framework\web\CController.php(270): CController->missingAction('add')
+#1 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): CController->run('add')
+#2 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController('user/add')
+#3 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\host\vhosts\ask\backend.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/backend.php?r=user/add
+HTTP_REFERER=http://ask/backend.php?r=site/index
+---
+2013/06/30 22:49:40 [error] [php] Undefined variable: _PSOT (D:\host\vhosts\ask\protected\admin\controllers\UserController.php:71)
+Stack trace:
+#0 D:\host\vhosts\ask\framework\web\CController.php(286): UserController->runAction()
+#1 D:\host\vhosts\ask\framework\web\CController.php(265): UserController->runActionWithFilters()
+#2 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): UserController->run()
+#3 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\host\vhosts\ask\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=user/checkupdate
+in D:\host\vhosts\ask\protected\admin\controllers\UserController.php (71)
+in D:\host\vhosts\ask\backend.php (13)
+2013/06/30 22:51:36 [error] [php] Undefined variable: 3 (D:\host\vhosts\ask\protected\admin\controllers\UserController.php:72)
+Stack trace:
+#0 D:\host\vhosts\ask\framework\web\CController.php(286): UserController->runAction()
+#1 D:\host\vhosts\ask\framework\web\CController.php(265): UserController->runActionWithFilters()
+#2 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): UserController->run()
+#3 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\host\vhosts\ask\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=user/checkupdate
+in D:\host\vhosts\ask\protected\admin\controllers\UserController.php (72)
+in D:\host\vhosts\ask\backend.php (13)
+2013/06/30 22:54:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "add" 动作.' in D:\host\vhosts\ask\framework\web\CController.php:483
+Stack trace:
+#0 D:\host\vhosts\ask\framework\web\CController.php(270): CController->missingAction('add')
+#1 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): CController->run('add')
+#2 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController('user/add')
+#3 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\host\vhosts\ask\backend.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/backend.php?r=user/add
+HTTP_REFERER=http://ask/backend.php?r=site/index
+---
+2013/07/01 09:30:01 [error] [php] Undefined variable: _FILE (D:\host\vhosts\ask\protected\admin\controllers\UserController.php:77)
+Stack trace:
+#0 D:\host\vhosts\ask\framework\web\CController.php(286): UserController->runAction()
+#1 D:\host\vhosts\ask\framework\web\CController.php(265): UserController->runActionWithFilters()
+#2 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): UserController->run()
+#3 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\host\vhosts\ask\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=user/checkupdate
+in D:\host\vhosts\ask\protected\admin\controllers\UserController.php (77)
+in D:\host\vhosts\ask\backend.php (13)
+2013/07/01 09:30:16 [error] [php] Undefined variable: _FILE (D:\host\vhosts\ask\protected\admin\controllers\UserController.php:77)
+Stack trace:
+#0 D:\host\vhosts\ask\framework\web\CController.php(286): UserController->runAction()
+#1 D:\host\vhosts\ask\framework\web\CController.php(265): UserController->runActionWithFilters()
+#2 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): UserController->run()
+#3 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\host\vhosts\ask\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=user/checkupdate
+in D:\host\vhosts\ask\protected\admin\controllers\UserController.php (77)
+in D:\host\vhosts\ask\backend.php (13)
+2013/07/01 09:45:39 [error] [php] move_uploaded_file(): open_basedir restriction in effect. File(/public/upload/avatar/2/2.jpg) is not within the allowed path(s): (D:\host\vhosts\ask;C:\Windows\Temp;) (D:\host\vhosts\ask\framework\web\CUploadedFile.php:196)
+Stack trace:
+#0 D:\host\vhosts\ask\framework\web\actions\CInlineAction.php(49): UserController->actionCheckUpdate()
+#1 D:\host\vhosts\ask\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\host\vhosts\ask\framework\web\CController.php(286): UserController->runAction()
+#3 D:\host\vhosts\ask\framework\web\CController.php(265): UserController->runActionWithFilters()
+#4 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): UserController->run()
+#5 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#7 D:\host\vhosts\ask\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=user/checkupdate
+in D:\host\vhosts\ask\protected\admin\controllers\UserController.php (90)
+in D:\host\vhosts\ask\backend.php (13)
+2013/07/01 09:46:53 [error] [php] is_dir(): open_basedir restriction in effect. File(/public/upload/avatar/2/) is not within the allowed path(s): (D:\host\vhosts\ask;C:\Windows\Temp;) (D:\host\vhosts\ask\protected\admin\controllers\UserController.php:87)
+Stack trace:
+#0 D:\host\vhosts\ask\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\host\vhosts\ask\framework\web\CController.php(286): UserController->runAction()
+#2 D:\host\vhosts\ask\framework\web\CController.php(265): UserController->runActionWithFilters()
+#3 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): UserController->run()
+#4 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 D:\host\vhosts\ask\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=user/checkupdate
+in D:\host\vhosts\ask\protected\admin\controllers\UserController.php (87)
+in D:\host\vhosts\ask\backend.php (13)
+2013/07/01 09:47:21 [error] [php] is_dir(): open_basedir restriction in effect. File(/public/upload/avatar/2) is not within the allowed path(s): (D:\host\vhosts\ask;C:\Windows\Temp;) (D:\host\vhosts\ask\protected\admin\controllers\UserController.php:87)
+Stack trace:
+#0 D:\host\vhosts\ask\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\host\vhosts\ask\framework\web\CController.php(286): UserController->runAction()
+#2 D:\host\vhosts\ask\framework\web\CController.php(265): UserController->runActionWithFilters()
+#3 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): UserController->run()
+#4 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 D:\host\vhosts\ask\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=user/checkupdate
+in D:\host\vhosts\ask\protected\admin\controllers\UserController.php (87)
+in D:\host\vhosts\ask\backend.php (13)
+2013/07/01 09:58:07 [error] [php] include(CArray.php): failed to open stream: No such file or directory (D:\host\vhosts\ask\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\host\vhosts\ask\protected\admin\extensions\image\drivers\Image_GD_Driver.php(80): spl_autoload_call()
+#1 D:\host\vhosts\ask\protected\admin\extensions\image\Image.php(334): Image_GD_Driver->process()
+#2 D:\host\vhosts\ask\protected\admin\controllers\UserController.php(101): Image->save()
+#3 D:\host\vhosts\ask\framework\web\actions\CInlineAction.php(49): UserController->actionCheckUpdate()
+#4 D:\host\vhosts\ask\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\host\vhosts\ask\framework\web\CController.php(286): UserController->runAction()
+#6 D:\host\vhosts\ask\framework\web\CController.php(265): UserController->runActionWithFilters()
+#7 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): UserController->run()
+#8 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\host\vhosts\ask\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=user/checkupdate
+in D:\host\vhosts\ask\protected\admin\extensions\image\drivers\Image_GD_Driver.php (80)
+in D:\host\vhosts\ask\protected\admin\extensions\image\Image.php (334)
+in D:\host\vhosts\ask\protected\admin\controllers\UserController.php (101)
+2013/07/01 10:26:46 [error] [php] is_dir(): open_basedir restriction in effect. File(/public/upload/avatar/3) is not within the allowed path(s): (D:\host\vhosts\ask;C:\Windows\Temp;) (D:\host\vhosts\ask\protected\admin\controllers\UserController.php:86)
+Stack trace:
+#0 D:\host\vhosts\ask\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\host\vhosts\ask\framework\web\CController.php(286): UserController->runAction()
+#2 D:\host\vhosts\ask\framework\web\CController.php(265): UserController->runActionWithFilters()
+#3 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): UserController->run()
+#4 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 D:\host\vhosts\ask\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=user/checkupdate
+in D:\host\vhosts\ask\protected\admin\controllers\UserController.php (86)
+in D:\host\vhosts\ask\backend.php (13)
+2013/07/01 10:35:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "add" 动作.' in D:\host\vhosts\ask\framework\web\CController.php:483
+Stack trace:
+#0 D:\host\vhosts\ask\framework\web\CController.php(270): CController->missingAction('add')
+#1 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): CController->run('add')
+#2 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController('user/add')
+#3 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\host\vhosts\ask\backend.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/backend.php?r=user/add
+HTTP_REFERER=http://ask/backend.php?r=site/index
+---
+2013/07/01 10:43:23 [error] [php] Undefined index: birthday (D:\host\vhosts\ask\protected\admin\controllers\UserController.php:69)
+Stack trace:
+#0 D:\host\vhosts\ask\framework\web\CController.php(286): UserController->runAction()
+#1 D:\host\vhosts\ask\framework\web\CController.php(265): UserController->runActionWithFilters()
+#2 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): UserController->run()
+#3 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\host\vhosts\ask\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=user/checkupdate
+in D:\host\vhosts\ask\protected\admin\controllers\UserController.php (69)
+in D:\host\vhosts\ask\backend.php (13)
+2013/07/01 10:44:05 [error] [php] Undefined index: birthday (D:\host\vhosts\ask\protected\admin\controllers\UserController.php:69)
+Stack trace:
+#0 D:\host\vhosts\ask\framework\web\CController.php(286): UserController->runAction()
+#1 D:\host\vhosts\ask\framework\web\CController.php(265): UserController->runActionWithFilters()
+#2 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): UserController->run()
+#3 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\host\vhosts\ask\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=user/checkupdate
+in D:\host\vhosts\ask\protected\admin\controllers\UserController.php (69)
+in D:\host\vhosts\ask\backend.php (13)
+2013/07/01 10:44:56 [error] [php] Undefined variable: avatar_50 (D:\host\vhosts\ask\protected\admin\controllers\UserController.php:117)
+Stack trace:
+#0 D:\host\vhosts\ask\framework\web\CController.php(286): UserController->runAction()
+#1 D:\host\vhosts\ask\framework\web\CController.php(265): UserController->runActionWithFilters()
+#2 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): UserController->run()
+#3 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\host\vhosts\ask\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=user/checkupdate
+in D:\host\vhosts\ask\protected\admin\controllers\UserController.php (117)
+in D:\host\vhosts\ask\backend.php (13)
+2013/07/01 10:49:53 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22003]: Numeric value out of range: 1264 Out of range value for column 'birthday' at row 1. The SQL statement executed was: UPDATE `ask_users` SET `username`=:yp0, `sex`=:yp1, `mobile`=:yp2, `birthday`=:yp3, `salt`=:yp4, `password`=:yp5 WHERE `ask_users`.`uid`=1.
+in D:\host\vhosts\ask\protected\admin\controllers\UserController.php (118)
+in D:\host\vhosts\ask\backend.php (13)
+2013/07/01 10:49:54 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[22003]: Numeric value out of range: 1264 Out of range value for column 'birthday' at row 1. The SQL statement executed was: UPDATE `ask_users` SET `username`=:yp0, `sex`=:yp1, `mobile`=:yp2, `birthday`=:yp3, `salt`=:yp4, `password`=:yp5 WHERE `ask_users`.`uid`=1' in D:\host\vhosts\ask\framework\db\CDbCommand.php:357
+Stack trace:
+#0 D:\host\vhosts\ask\framework\db\ar\CActiveRecord.php(1691): CDbCommand->execute()
+#1 D:\host\vhosts\ask\protected\admin\controllers\UserController.php(118): CActiveRecord->updateByPk('1', Array)
+#2 D:\host\vhosts\ask\framework\web\actions\CInlineAction.php(49): UserController->actionCheckUpdate()
+#3 D:\host\vhosts\ask\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\host\vhosts\ask\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\host\vhosts\ask\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): CController->run('checkupdate')
+#7 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController('user/checkupdat...')
+#8 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\host\vhosts\ask\backend.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/backend.php?r=user/checkupdate
+HTTP_REFERER=http://ask/backend.php?r=user/update&uid=1
+---
+2013/07/01 10:58:15 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.published_uid" 未被定义.' in D:\host\vhosts\ask\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\host\vhosts\ask\framework\db\schema\CDbCriteria.php(160): CComponent->__set('published_uid', '1')
+#1 D:\host\vhosts\ask\framework\db\schema\CDbCommandBuilder.php(483): CDbCriteria->__construct(Array)
+#2 D:\host\vhosts\ask\framework\db\ar\CActiveRecord.php(1542): CDbCommandBuilder->createCriteria(Array, Array)
+#3 D:\host\vhosts\ask\protected\admin\controllers\UserController.php(127): CActiveRecord->count(Array)
+#4 D:\host\vhosts\ask\protected\admin\views\user\index.php(54): UserController->getQuestionCount('1')
+#5 D:\host\vhosts\ask\framework\web\CBaseController.php(126): require('D:\host\vhosts\...')
+#6 D:\host\vhosts\ask\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\host\vhosts\...', Array, true)
+#7 D:\host\vhosts\ask\framework\web\CController.php(869): CBaseController->renderFile('D:\host\vhosts\...', Array, true)
+#8 D:\host\vhosts\ask\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#9 D:\host\vhosts\ask\protected\admin\controllers\UserController.php(35): CController->render('index', Array)
+#10 D:\host\vhosts\ask\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#11 D:\host\vhosts\ask\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\host\vhosts\ask\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 D:\host\vhosts\ask\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): CController->run('index')
+#15 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController('user/index')
+#16 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 D:\host\vhosts\ask\backend.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/backend.php?r=user/index
+HTTP_REFERER=http://ask/backend.php?r=site/index
+---
+2013/07/01 12:54:49 [error] [php] A non well formed numeric value encountered (D:\host\vhosts\ask\protected\admin\controllers\UserController.php:73)
+Stack trace:
+#0 D:\host\vhosts\ask\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\host\vhosts\ask\framework\web\CController.php(286): UserController->runAction()
+#2 D:\host\vhosts\ask\framework\web\CController.php(265): UserController->runActionWithFilters()
+#3 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): UserController->run()
+#4 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 D:\host\vhosts\ask\backend.php(13): CWebApplication->run()
+REQUEST_URI=/backend.php?r=user/checkupdate
+in D:\host\vhosts\ask\protected\admin\controllers\UserController.php (73)
+in D:\host\vhosts\ask\backend.php (13)
+2013/07/01 13:05:45 [error] [exception.CException] exception 'CException' with message '属性 "Users.usernam" 未被定义.' in D:\host\vhosts\ask\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\host\vhosts\ask\framework\db\ar\CActiveRecord.php(159): CComponent->__set('usernam', 'test2')
+#1 D:\host\vhosts\ask\protected\admin\controllers\UserController.php(112): CActiveRecord->__set('usernam', 'test2')
+#2 D:\host\vhosts\ask\framework\web\actions\CInlineAction.php(49): UserController->actionCheckAdd()
+#3 D:\host\vhosts\ask\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\host\vhosts\ask\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\host\vhosts\ask\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): CController->run('checkadd')
+#7 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController('user/checkadd')
+#8 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\host\vhosts\ask\backend.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/backend.php?r=user/checkadd
+HTTP_REFERER=http://ask/backend.php?r=user/add
+---
+2013/07/03 12:49:17 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22003]: Numeric value out of range: 1264 Out of range value for column 'birthday' at row 1. The SQL statement executed was: UPDATE `ask_users` SET `username`=:yp0, `sex`=:yp1, `mobile`=:yp2, `birthday`=:yp3 WHERE `ask_users`.`uid`=1.
+in D:\host\vhosts\ask\protected\admin\controllers\UserController.php (86)
+in D:\host\vhosts\ask\backend.php (13)
+2013/07/03 12:49:17 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[22003]: Numeric value out of range: 1264 Out of range value for column 'birthday' at row 1. The SQL statement executed was: UPDATE `ask_users` SET `username`=:yp0, `sex`=:yp1, `mobile`=:yp2, `birthday`=:yp3 WHERE `ask_users`.`uid`=1' in D:\host\vhosts\ask\framework\db\CDbCommand.php:357
+Stack trace:
+#0 D:\host\vhosts\ask\framework\db\ar\CActiveRecord.php(1691): CDbCommand->execute()
+#1 D:\host\vhosts\ask\protected\admin\controllers\UserController.php(86): CActiveRecord->updateByPk('1', Array)
+#2 D:\host\vhosts\ask\framework\web\actions\CInlineAction.php(49): UserController->actionCheckUpdate()
+#3 D:\host\vhosts\ask\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\host\vhosts\ask\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\host\vhosts\ask\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): CController->run('checkupdate')
+#7 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController('user/checkupdat...')
+#8 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\host\vhosts\ask\backend.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/backend.php?r=user/checkupdate
+HTTP_REFERER=http://ask/backend.php?r=user/update&uid=1
+---
+2013/07/03 12:49:32 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22003]: Numeric value out of range: 1264 Out of range value for column 'birthday' at row 1. The SQL statement executed was: UPDATE `ask_users` SET `username`=:yp0, `sex`=:yp1, `mobile`=:yp2, `birthday`=:yp3 WHERE `ask_users`.`uid`=1.
+in D:\host\vhosts\ask\protected\admin\controllers\UserController.php (86)
+in D:\host\vhosts\ask\backend.php (13)
+2013/07/03 12:49:32 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[22003]: Numeric value out of range: 1264 Out of range value for column 'birthday' at row 1. The SQL statement executed was: UPDATE `ask_users` SET `username`=:yp0, `sex`=:yp1, `mobile`=:yp2, `birthday`=:yp3 WHERE `ask_users`.`uid`=1' in D:\host\vhosts\ask\framework\db\CDbCommand.php:357
+Stack trace:
+#0 D:\host\vhosts\ask\framework\db\ar\CActiveRecord.php(1691): CDbCommand->execute()
+#1 D:\host\vhosts\ask\protected\admin\controllers\UserController.php(86): CActiveRecord->updateByPk('1', Array)
+#2 D:\host\vhosts\ask\framework\web\actions\CInlineAction.php(49): UserController->actionCheckUpdate()
+#3 D:\host\vhosts\ask\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\host\vhosts\ask\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\host\vhosts\ask\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): CController->run('checkupdate')
+#7 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController('user/checkupdat...')
+#8 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\host\vhosts\ask\backend.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/backend.php?r=user/checkupdate
+HTTP_REFERER=http://ask/backend.php?r=user/update&uid=1
+---
+2013/07/04 14:24:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "delete" 动作.' in D:\host\vhosts\ask\framework\web\CController.php:483
+Stack trace:
+#0 D:\host\vhosts\ask\framework\web\CController.php(270): CController->missingAction('delete')
+#1 D:\host\vhosts\ask\framework\web\CWebApplication.php(282): CController->run('delete')
+#2 D:\host\vhosts\ask\framework\web\CWebApplication.php(141): CWebApplication->runController('user/delete')
+#3 D:\host\vhosts\ask\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\host\vhosts\ask\backend.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/backend.php?r=user/delete&uid=9
+HTTP_REFERER=http://ask/backend.php?r=user/index
+---
