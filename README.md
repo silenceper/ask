@@ -1,5 +1,3 @@
-ask
-===
-
-YII 框架实现的问答系统  
-演示:powers.sinaapp.com
+#社交化问答系统
+本系统基于YII框架开发而成   
+预览地址:http://powers.sinaapp.com/
